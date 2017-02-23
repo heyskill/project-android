@@ -1,9 +1,9 @@
-Դ����˵���ֲ�
+源代码说明手册
 
-���л�����android
+运行环境：android
 
-һ����ѹArchive.zip,androidԴ�룬�������apk��װ���ֻ���
-������sdcard_v3.zip��ѹ��������sdcard�ļ��У��������3���ļ��к�һ��mp3�ļ����Ƶ��ֵ�sd���ĸ�Ŀ¼��
-�������Ե�����а�װ�õ�app��������������Ч��
+一，myapp为android工程，用eclipse打开将其编译apk后安装在手机上
+二，将sdcard_v3.zip解压出来进入sdcard文件夹，将里面的3个文件夹和一个mp3文件复制到手的sd卡的根目录下
+三，可以点击运行安装好的app看到金字塔分屏效果
 
 
