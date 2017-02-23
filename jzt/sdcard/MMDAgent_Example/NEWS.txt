@@ -1,0 +1,32 @@
+Version 1.4:
+ * add 3D model and motions of SD Mei.
+ * convert HTS voice to new format.
+
+Version 1.3.1:
+ * add some 3D models and motions.
+ * fix a tiny bug in .fst file.
+
+Version 1.3:
+ * change .mdf and .fst files for MMDAgent-1.3.
+
+Version 1.1:
+ * remove some options in .mdf file.
+
+Version 1.0:
+ * the stable release.
+
+Version RC2:
+ * add boot screen.
+
+Version RC:
+ * add breath, bye, imagine, laugh, surprise motions.
+ * add web-browsing, full-screen, and bye-bye tasks.
+
+Version Beta:
+ * add guide task.
+ * add listening motion.
+ * add idle motions.
+ * re-define state number.
+
+Version Alpha:
+ * the first release.

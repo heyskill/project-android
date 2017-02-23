@@ -1,0 +1,42 @@
+;
+; アンドロイド向けの命令セット
+;
+
+[const SENSOR_TYPE_ACCELEROMETER  = 1]
+[const SENSOR_TYPE_MAGNETIC_FIELD = 2]
+[const SENSOR_TYPE_ORIENTATION    = 3]
+[const SENSOR_TYPE_GYROSCOPE      = 4]
+[const SENSOR_TYPE_LIGHT          = 5]
+[const SENSOR_TYPE_PRESSURE       = 6]
+[const SENSOR_TYPE_TEMPERATURE    = 7]
+[const SENSOR_TYPE_PROXIMITY      = 8]
+[const SENSOR_TYPE_ALL            = -1]
+
+[const SENSOR_DELAY_FASTEST = 0]
+[const SENSOR_DELAY_GAME    = 1]
+[const SENSOR_DELAY_UI      = 2]
+[const SENSOR_DELAY_NORMAL  = 3]
+
+; バイブレート
+;--------------------
+[macro name:"vibrate" params:"time"]
+  [send_message type:"VIBRATE" args:$time]
+[endmacro]
+
+; センサーの有効化
+;--------------------
+[macro name:"sensor_on" params:"type, delay"]
+  [send_message type:"SENSOR_ON" args:"".$type."|".$delay]
+[endmacro]
+
+; センサーの無効化
+;--------------------
+[macro name:"sensor_off"]
+  [send_message type:"SENSOR_OFF"]
+[endmacro]
+
+; インテント送信
+;--------------------
+[macro name:"intent_sendfile" params:"type, file"]
+  [send_message type:"INTENT_SENDFILE" args:"".$type."|".$file]
+[endmacro]

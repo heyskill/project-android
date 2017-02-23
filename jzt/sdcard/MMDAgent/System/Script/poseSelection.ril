@@ -1,0 +1,37 @@
+[include "system\script\interface.ril"]
+
+[const PATH = "Pose"]
+
+[let $fileList]
+
+;-----
+
+[macro name:"release"]
+  [button_delete][button_waitdelete]
+  [wait 0.01]
+  [send_message type:"POSE_SELECTED"]
+  [kill]
+[endmacro]
+
+; åàíË
+[macro name:"button_press" params:"args"]
+  [let $alias = $args[0][0]]
+  [let $global["share"]["pose"] = $global["fileList"][$alias]]
+  [thread][release][endthread]
+[endmacro]
+
+; ê›íËÉtÉ@ÉCÉãÇì«Ç›çûÇﬁ
+[let $y = 50]
+[set $files][find_all path:PATH ext:"vpd"]
+[set $vmdFiles][find_all path:PATH ext:"vmd"]
+[let $files += $vmdFiles]
+[foreach from:$files item:$file]
+  [set $len][strlen PATH]
+  [set $text][substr src:$file offset:$len + 1]
+  [set $alias][button text:$text file:"system\image\button00.png" x:(SCREEN_WIDTH - 320) / 2 y:$y width:320 height:32 layer:1000]
+  [button_listen call:"button_press" event:BUTTON_EVENT_PRESS alias:$alias]
+  [button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+  [button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+  [let $fileList[$alias] = $path.$file]
+  [let $y += 34]
+[endforeach]

@@ -1,0 +1,728 @@
+;-------------------------------------------------------------------------
+; インクルード
+;-------------------------------------------------------------------------
+; 基礎命令を使えるようにする
+[include "System\Script\foundation.ril"]
+; アンドロイドの命令を使えるようにする
+[include "System\Script\android.ril"]
+; ボタンインターフェース
+[include "System\Script\interface.ril"]
+
+;-------------------------------------------------------------------------
+; 特定のイベントが来たら反応するようにする（マクロを呼び出す）
+;-------------------------------------------------------------------------
+/*
+[macro name:"slapping"]
+  [thread_stop alias:"blink"]
+
+  [bone_getposition model:"メインキャラ" name:"頭" dest:$pos]
+  [camera x:$pos["x"] y:$pos["y"] - 0.5 z:$pos["z"] rx:15 ry:0.0 rz:0.0 distance:11.0 fovy:32.0 time:1]
+
+  [synth model:"メインキャラ" voice:"mei_voice_happy"]死ね[endsynth]
+  [morph model:"メインキャラ" name:"笑い" weight:1]
+  [motion_add model:"メインキャラ" alias:"state" file:"Motion\slapping_in.vmd" frame:PART repeat:ONCE]
+  [wait event:"MOTION_EVENT_DELETE" args:"メインキャラ|state"]
+
+  [motion_add model:"メインキャラ" alias:"state" file:"Motion\slapping_out.vmd" frame:PART repeat:ONCE]
+  [motion_accelerate model:"メインキャラ" motion:"state" speed:3 duration:0 start:0]
+
+  [wait 0.2]
+  [vibrate 100]
+
+  [motion_delete model:"メインキャラ" alias:"state"]
+  [wait event:"MOTION_EVENT_DELETE" args:"メインキャラ|state"]
+
+  [bone_getposition model:"メインキャラ" name:"頭" dest:$pos]
+  [camera x:$pos["x"] y:$pos["y"] - 0.5 z:$pos["z"] rx:0 ry:0.0 rz:0.0 distance:15.0 fovy:32.0 time:0.5]
+
+  [wait 1]
+  [morph model:"メインキャラ" name:"笑い" weight:0]
+  [synth model:"メインキャラ" voice:"mei_voice_happy"]ふふ[endsynth]
+  [thread_start]
+[endmacro]
+; ダブルクリックされたらヒット判定
+[macro name:"normal_click" params:"args"]
+  [mouse_pick $result]
+  [if "メインキャラ" == $result["alias"]]
+    [slapping]
+  [endif]
+[endmacro]
+[listen call:"normal_click" event:"MOUSE_EVENT_DOUBLECLICK"]
+*/
+
+[macro name:"殴って"]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]殴ってくださいでしょ？[endsynth]
+[endmacro]
+[listen call:"殴って" event:"RECOG_EVENT_STOP" args:"殴って"]
+
+[macro name:"殴れ"]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]なんか言った？[endsynth]
+[endmacro]
+[listen call:"殴れ" event:"RECOG_EVENT_STOP" args:"殴れ"]
+
+[macro name:"殴ってください"]
+  [synth model:"メインキャラ" voice:"mei_voice_happy"]だめ[endsynth]
+[endmacro]
+[listen call:"殴ってください" event:"RECOG_EVENT_STOP" args:"殴ってください"]
+
+[macro name:"ありがとうございます"]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]きもい[endsynth]
+[endmacro]
+[listen call:"ありがとうございます" event:"RECOG_EVENT_STOP" args:"ありがとう"]
+
+[macro name:"時刻"]
+  [time $time]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]
+    [ch $time["hour"]]時[ch $time["min"]]分です。
+  [endsynth]
+[endmacro]
+[listen call:"時刻" event:"RECOG_EVENT_STOP" args:"何時"]
+[listen call:"時刻" event:"RECOG_EVENT_STOP" args:"時刻"]
+[listen call:"時刻" event:"RECOG_EVENT_STOP" args:"時計"]
+
+[macro name:"曜日"]
+  [time $time]
+  [set $weeks][stream toarray:true]日[r]月[r]火[r]水[r]木[r]金[r]土[r][endstream]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]
+    今日は[ch $weeks[$time["week"]]]曜日です。
+  [endsynth]
+[endmacro]
+[listen call:"曜日" event:"RECOG_EVENT_STOP" args:"曜日"]
+
+[macro name:"年"]
+  [time $time]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]
+    今年は[ch $time["year"]]年です。
+  [endsynth]
+[endmacro]
+[listen call:"年" event:"RECOG_EVENT_STOP" args:"何,年"]
+
+[macro name:"月"]
+  [time $time]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]
+    [ch $time["month"]]月です。
+  [endsynth]
+[endmacro]
+[listen call:"月" event:"RECOG_EVENT_STOP" args:"何,月"]
+
+[macro name:"日"]
+  [time $time]
+  [synth model:"メインキャラ" voice:"mei_voice_angry"]
+    今日は[ch $time["day"]]日です。
+  [endsynth]
+[endmacro]
+[listen call:"日" event:"RECOG_EVENT_STOP" args:"何,日"]
+
+;-------------------------------------------------------------------------
+; 重力制御
+;-------------------------------------------------------------------------
+[macro name:"accelerometer" params:"args"]
+;  x:[ch $args[0][0]] y:[ch $args[0][1]] z:[ch $args[0][2]][r]
+  [gravity x:$args[0][0] * -50.0 y:(7 + $args[0][1]) * -50.0 z:(-7 + $args[0][2]) * -50.0]
+[endmacro]
+[listen call:"accelerometer" event:"SENSOR_EVENT_ACCELEROMETER"]
+
+;-------------------------------------------------------------------------
+; 数秒間隔で瞬きさせる独立したマクロ（スレッド）
+;-------------------------------------------------------------------------
+[macro name:"blink" params:"id"]
+  [let $model_alias = "actor_".$id]
+  [while 1]
+    [rand min:0 max:4 dest:$time]
+    [wait $time]
+    [morph_getinfo model:$model_alias name:"まばたき" dest:$morph]
+;    [let $weight = $morph["weight"]]
+    [let $weight = 0]
+    [if 1 == $weight][continue][endif]
+    [let $time = 0.1 * (1.0 - $weight)]
+    [morph model:$model_alias name:"まばたき" weight:1 time:$time]
+    [wait event:"MOTION_EVENT_DELETE" args:$model_alias."|まばたき"]
+    [morph model:$model_alias name:"まばたき" weight:$weight time:$time]
+    [wait event:"MOTION_EVENT_DELETE" args:$model_alias."|まばたき"]
+  [endwhile]
+[endmacro]
+
+[foreach from:$share["actors"] item:$actor key:$id]
+  [thread alias:"blink"][blink $id][endthread]
+[endforeach]
+
+;-------------------------------------------------------------------------
+; マウスピッキング用デバッグメッセージ
+;-------------------------------------------------------------------------
+/*
+[while 1]
+  [wait 0.1]
+  [mouse_pick $result]
+  model:[ch $result["alias"]] bone: [ch $result["bone"]][r]
+[endwhile]
+*/
+
+;-------------------------------------------------------------------------
+; 壁紙起動ならここで処理は終了する
+;-------------------------------------------------------------------------
+[if $share["WALLPAPER"]][return][endif]
+
+;-------------------------------------------------------------------------
+; メニュー表示
+;-------------------------------------------------------------------------
+
+; サブウィンドウフェードイン
+[macro name:"subwindow_fadein"]
+  [image_color alias:"subwindow" alpha:0]
+  [image_show alias:"subwindow"]
+  [let $alpha = 0]
+  [while 0.8 > $alpha]
+    [image_color alias:"subwindow" alpha:$alpha]
+    [let $alpha += 0.01]
+    [wait 0.001]
+  [endwhile]
+[endmacro]
+
+; サブウィンドウフェードアウト
+[macro name:"subwindow_fadeout"]
+  [let $alpha = 0.8]
+  [while 0 < $alpha]
+    [image_color alias:"subwindow" alpha:$alpha]
+    [let $alpha -= 0.01]
+    [wait 0.001]
+  [endwhile]
+  [image_hide alias:"subwindow"]
+[endmacro]
+
+;-------------------------------------------------------------------------
+; 操作対象変更
+;-------------------------------------------------------------------------
+[macro name:"forcus_change" params:"id, camera = true"]
+  [let &$share = $global["share"]]
+  
+  [let $share["actor_id"] = $id]
+  
+  [if 0 > $id][return][endif]
+  
+  ; モーフ設定
+  [send_message type:"MODEL_CHANGE"]
+  
+  ; ボタン表示
+  [button_show "model_delete"]
+  [button_show "model_change"]
+  [button_show "pose_change"]
+  [button_show "morph_window"]
+  [button_show "rotate"]
+  [button_show "move"]
+  [button_show "scale"]
+  [button_show "floorfit"]
+  [button_show "scale_reset"]
+  [textbox_show "model_name"]
+  
+  [button_enable "model_delete"]
+  [button_enable "model_change"]
+  [button_enable "pose_change"]
+  [button_enable "morph_window"]
+  [button_enable "rotate"]
+  [button_enable "move"]
+  [button_enable "scale"]
+  [button_enable "floorfit"]
+  [button_enable "scale_reset"]
+  
+  ; モデル名更新
+  [model_getinfo dest:$model_info alias:"actor_".$id]
+  [textbox alias:"model_name"][ch $model_info["name"]][endtextbox]
+  [textbox_getsize alias:"model_name" width:$width height:$height]
+  [textbox_getposition alias:"model_name" x:$posx y:$posy]
+  [textbox_move alias:"model_name" x:SCREEN_WIDTH - $width - 40 y:$posy absolute:true]
+  
+  ; カメラ位置調整
+  [let $model_alias = "actor_".$id]
+  [bone_getposition model:$model_alias name:"頭" dest:$bone]
+  [camera_getinfo $share["camera"]]
+  [let $share["camera"]["x"] = $bone["x"]]
+  [let $share["camera"]["y"] = $bone["y"] - 0.5]
+  [let $share["camera"]["z"] = $bone["z"]]
+  [if $camera]
+    [camera x:$share["camera"]["x"] y:$share["camera"]["y"] z:$share["camera"]["z"]
+            rx:$share["camera"]["rx"] ry:$share["camera"]["ry"] rz:$share["camera"]["rz"]
+            distance:$share["camera"]["distance"] fovy:32.0 time:3]
+  [endif]
+[endmacro]
+
+;-------------------------------------------------------------------------
+; ステージ変更
+;-------------------------------------------------------------------------
+[let $posx = 20]
+[let $posy = 20]
+
+; ステージファイルが選択された
+[macro name:"stage_file_selected" params:"args"]
+  [button_enable]
+  
+  [set $length][strlen $args[1][0]]
+  [if 0 == $length][return][endif]
+  
+  [let &$share = $global["share"]]
+  [let $share["stage"] = $args[1][0]]
+  ; モデル変更
+  [stage file:$share["stage"]]
+[endmacro]
+[listen call:"stage_file_selected" event:"FILE_EVENT_SELECT" args:"STAGE"]
+
+[macro name:"menu_stage_press" params:"args"]
+  [file_select alias:"STAGE" dir:"Stage" ext:"xpmd; pmd; pmx"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "stage_change"]
+[button_small alias:$alias text:"ステージ変更" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_stage_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; モデル追加
+;-------------------------------------------------------------------------
+; モデルファイルが選択された
+[macro name:"modeladd_file_selected" params:"args"]
+  [set $length][strlen $args[1][0]]
+  [if 0 == $length][return][endif]
+  
+  [let &$share = $global["share"]]
+  
+  ; アクター追加
+  [let $share["actors"][] = 0]
+  [foreach from:$share["actors"] item:$actor key:$id]
+  [endforeach]
+  
+  [let &$actor = $share["actors"][$id]]
+  [let $actor["model"] = $args[1][0]]
+  
+  [let $model_alias = "actor_".$id]
+  
+  ; モデル追加
+  [camera_getinfo $camera]
+  [model_add alias:$model_alias file:$actor["model"] x:$camera["x"] z:$camera["z"]]
+  [wait event:"MODEL_EVENT_ADD" args:$model_alias]
+  
+  ; 呼吸モーションの読み込み
+  [motion_add model:$model_alias alias:"呼吸" file:"System\Motion\breath.vmd" smooth:ON repeat:LOOP frame:PART priority:10]
+  
+  : 操作対象に設定
+  [forcus_change $id]
+[endmacro]
+[listen call:"modeladd_file_selected" event:"FILE_EVENT_SELECT" args:"MODEL_ADD"]
+
+[macro name:"menu_modeladd_press" params:"args"]
+  [file_select alias:"MODEL_ADD" dir:"Model" ext:"pmd; pmx"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "model_add"]
+[button_small alias:$alias text:"モデル追加" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_modeladd_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 操作対象
+;-------------------------------------------------------------------------
+[macro name:"menu_actor_press" params:"args"]
+  [send_message type:"MORPH_HIDE"]
+  [button_disable]
+  [script_add file:"System\Script\actorSelection.ril"]
+  [button_neutral $args]
+[endmacro]
+
+[macro name:"menu_actor_release" params:"args"]
+  [let $id = $args[0][0]]
+  [forcus_change $id]
+  
+  [button_enable]
+  [send_message type:"MORPH_SHOW"]
+[endmacro]
+[listen call:"menu_actor_release" event:"ACTOR_SELECTED"]
+
+[let $alias = "actor_change"]
+[button_small alias:$alias text:"操作対象" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_actor_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; モデル削除
+;-------------------------------------------------------------------------
+[let $posx = SCREEN_WIDTH - 120]
+[let $posy = 20]
+
+[macro name:"menu_modeldelete_press" params:"args"]
+  [let &$share = $global["share"]]
+  [unset $share["actors"][$share["actor_id"]]]
+  
+  [let $model_alias = "actor_".$share["actor_id"]]
+  [model_delete $model_alias]
+  
+  ; ボタン非表示
+  [button_hide "model_delete"]
+  [button_hide "model_change"]
+  [button_hide "pose_change"]
+  [button_hide "morph_window"]
+  [button_hide "rotate"]
+  [button_hide "move"]
+  [button_hide "scale"]
+  [button_hide "floorfit"]
+  [button_hide "scale_reset"]
+  [textbox_hide "model_name"]
+  
+  ; モーフ設定
+  [send_message type:"MORPH_CLOSE"]
+  
+  ; 残っているメンバーにフォーカス
+  [foreach from:$share["actors"] item:$actor key:$id]
+    [forcus_change $id]
+    [break]
+  [endforeach]
+  
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "model_delete"]
+[button_small alias:$alias text:"モデル削除" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_modeldelete_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; モデル変更
+;-------------------------------------------------------------------------
+; モデルファイルが選択された
+[macro name:"model_file_selected" params:"args"]
+  [set $length][strlen $args[1][0]]
+  [if 0 == $length][return][endif]
+  
+  [let &$share = $global["share"]]
+  
+  [let &$actor = $share["actors"][$share["actor_id"]]]
+  [let $actor["model"] = $args[1][0]]
+  
+  ; モデル変更
+  [let $model_alias = "actor_".$share["actor_id"]]
+  [model_change alias:$model_alias file:$actor["model"]]
+  [wait event:"MODEL_EVENT_CHANGE" args:$model_alias]
+  
+  ; モーフ設定
+  [unset $actor["morphs"]]
+  [send_message type:"MODEL_CHANGE"]
+  
+  ; カメラ位置調整
+  [bone_getposition model:$model_alias name:"頭" dest:$bone]
+  [camera_getinfo $share["camera"]]
+  [let $share["camera"]["x"] = $bone["x"]]
+  [let $share["camera"]["y"] = $bone["y"] - 0.5]
+  [let $share["camera"]["z"] = $bone["z"]]
+  [camera x:$share["camera"]["x"] y:$share["camera"]["y"] z:$share["camera"]["z"]
+          rx:$share["camera"]["rx"] ry:$share["camera"]["ry"] rz:$share["camera"]["rz"]
+          distance:$share["camera"]["distance"] fovy:32.0 time:3]
+[endmacro]
+[listen call:"model_file_selected" event:"FILE_EVENT_SELECT" args:"MODEL_CHANGE"]
+
+[macro name:"menu_model_press" params:"args"]
+  [file_select alias:"MODEL_CHANGE" dir:"Model" ext:"pmd; pmx"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "model_change"]
+[button_small alias:$alias text:"モデル変更" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_model_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; ポーズ変更
+;-------------------------------------------------------------------------
+; ポーズファイルが選択された
+[macro name:"pose_file_selected" params:"args"]
+  [set $length][strlen $args[1][0]]
+  [if 0 == $length][return][endif]
+  
+  [let &$share = $global["share"]]
+  [let &$actor = $share["actors"][$share["actor_id"]]]
+  [let $actor["pose"] = $args[1][0]]
+  
+  ; ポーズ変更
+  [let $model_alias = "actor_".$share["actor_id"]]
+  [motion_delete model:$model_alias alias:"pose"]
+  [wait event:"MOTION_EVENT_DELETE" args:$model_alias."|pose"]
+  [motion_add model:$model_alias alias:"pose" file:$actor["pose"] smooth:ON repeat:LOOP frame:PART]
+  [wait event:"MOTION_EVENT_ADD" args:$model_alias."|pose"]
+  [wait 1]
+  ; カメラ位置調整
+  [bone_getposition model:$model_alias name:"頭" dest:$bone]
+  [camera_getinfo $share["camera"]]
+  [let $share["camera"]["x"] = $bone["x"]]
+  [let $share["camera"]["y"] = $bone["y"] - 0.5]
+  [let $share["camera"]["z"] = $bone["z"]]
+  [camera x:$share["camera"]["x"] y:$share["camera"]["y"] z:$share["camera"]["z"]
+          rx:$share["camera"]["rx"] ry:$share["camera"]["ry"] rz:$share["camera"]["rz"]
+          distance:$share["camera"]["distance"] fovy:32.0 time:3]
+[endmacro]
+[listen call:"pose_file_selected" event:"FILE_EVENT_SELECT" args:"POSE"]
+
+[macro name:"menu_pose_press" params:"args"]
+  [file_select alias:"POSE" dir:"Pose" ext:"vpd; vmd"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "pose_change"]
+[button_small alias:$alias text:"ポーズ変更" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_pose_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; モーフ設定
+;-------------------------------------------------------------------------
+[macro name:"menu_morph_press" params:"args"]
+  [script_add file:"System\Script\morphSelection.ril"]
+  [button_switcher $args]
+[endmacro]
+
+[macro name:"menu_morph_release" params:"args"]
+  [send_message type:"MORPH_CLOSE"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "morph_window"]
+[button_small alias:$alias text:"モーフ設定" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_morph_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"menu_morph_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 着地
+;-------------------------------------------------------------------------
+[let $posx -= 100]
+[let $posy = 20]
+
+[macro name:"menu_floorfit_press" params:"args"]
+  [let $model_alias = "actor_".$global["share"]["actor_id"]]
+  
+  [bone_getposition model:$model_alias name:"全ての親" dest:$pos local:true]
+  [bone_move model:$model_alias name:"全ての親" x:$pos["x"] y:0 z:$pos["z"] local:false]
+  
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "floorfit"]
+[button_small alias:$alias text:"着地" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_floorfit_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 等倍
+;-------------------------------------------------------------------------
+[macro name:"menu_scale_reset_press" params:"args"]
+  [let $model_alias = "actor_".$global["share"]["actor_id"]]
+  
+  [model_scale alias:$model_alias value:1 local:false]
+  
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "scale_reset"]
+[button_small alias:$alias text:"等倍" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_scale_reset_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 回転
+;-------------------------------------------------------------------------
+[macro name:"rotate_loop"]
+  [camera_getinfo $prev_camera]
+  [while true]
+    [let $model_alias = "actor_".$global["share"]["actor_id"]]
+    [camera_getinfo $camera]
+    [let $x = $camera["rx"] - $prev_camera["rx"]]
+    [let $y = $camera["ry"] - $prev_camera["ry"]]
+    [let $z = $camera["rz"] - $prev_camera["rz"]]
+    [bone_turn model:$model_alias name:"全ての親" x:$x * -0.01 y:$y * -0.01 z:$z * -0.01]
+    [wait DELTA_TIME]
+    [let $prev_camera = $camera]
+    [unset $camera]
+  [endwhile]
+[endmacro]
+
+[macro name:"menu_rotate_press" params:"args"]
+  [thread "rotate_loop"][rotate_loop][endthread]
+  [button_switcher $args]
+[endmacro]
+
+[macro name:"menu_rotate_release" params:"args"]
+  [thread_delete "rotate_loop"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "rotate"]
+[button_small alias:$alias text:"回転" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_rotate_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"menu_rotate_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 移動
+;-------------------------------------------------------------------------
+[macro name:"move_loop"]
+  [camera_getinfo $prev_camera]
+  [while true]
+    [let $model_alias = "actor_".$global["share"]["actor_id"]]
+    [camera_getinfo $camera]
+    [let $x = $camera["x"] - $prev_camera["x"]]
+    [let $y = $camera["y"] - $prev_camera["y"]]
+    [let $z = $camera["z"] - $prev_camera["z"]]
+    [if 0 != $x + $y + $z]
+      [bone_move model:$model_alias name:"全ての親" x:$x y:$y z:$z]
+    [endif]
+    [wait DELTA_TIME]
+    [let $prev_camera = $camera]
+    [unset $camera]
+  [endwhile]
+[endmacro]
+
+[macro name:"menu_move_press" params:"args"]
+  [thread "move_loop"][move_loop][endthread]
+  [button_switcher $args]
+[endmacro]
+
+[macro name:"menu_move_release" params:"args"]
+  [thread_delete "move_loop"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "move"]
+[button_small alias:$alias text:"移動" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_move_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"menu_move_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; スケール
+;-------------------------------------------------------------------------
+[macro name:"scale_loop"]
+  [camera_getinfo $prev_camera]
+  [while true]
+    [let $model_alias = "actor_".$global["share"]["actor_id"]]
+    [camera_getinfo $camera]
+    [let $value = $camera["distance"] - $prev_camera["distance"]]
+    [model_scale alias:$model_alias value:$value * 0.02]
+    [wait DELTA_TIME]
+    [let $prev_camera = $camera]
+    [unset $camera]
+  [endwhile]
+[endmacro]
+
+[macro name:"menu_scale_press" params:"args"]
+  [thread "scale_loop"][scale_loop][endthread]
+  [button_switcher $args]
+[endmacro]
+
+[macro name:"menu_scale_release" params:"args"]
+  [thread_delete "scale_loop"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "scale"]
+[button_small alias:$alias text:"スケール" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_scale_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"menu_scale_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[button_hide $alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; モデル名
+;-------------------------------------------------------------------------
+[model_getinfo dest:$model_info alias:"actor_".$actor_id]
+[textbox alias:"model_name" layer:1000][ch $model_info["name"]][endtextbox]
+[textbox_getsize alias:"model_name" width:$width height:$height]
+[textbox_move alias:"model_name" x:SCREEN_WIDTH - $width - 40 y:$posy absolute:true]
+
+;-------------------------------------------------------------------------
+; ダンスモード
+;-------------------------------------------------------------------------
+[macro name:"scene_dance"]
+  [send_message type:"MORPH_CLOSE"]
+  [textbox_delete]
+  [button_delete]
+  [button_waitdelete]
+  [script_add file:"System\Script\sceneDance.ril"]
+  [kill]
+[endmacro]
+
+[macro name:"menu_dance_press" params:"args"]
+  [thread][scene_dance][endthread]
+[endmacro]
+
+[let $alias = "dance_mode"]
+[button_small alias:$alias text:"ダンスモード" x:20 y:SCREEN_HEIGHT - 50 layer:1000]
+[button_listen call:"menu_dance_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 画像保存
+;-------------------------------------------------------------------------
+[macro name:"savephoto_press" params:"args"]
+  [send_message type:"MORPH_HIDE"]
+  [button_hide]
+  [textbox_hide "model_name"]
+  [image_capture alias:"capture" layer:1000]
+  [subwindow_fadein]
+  [script_add file:"System\Script\sceneSavePhoto.ril"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "image_save"]
+[button_small alias:$alias text:"[画像作成]" x:SCREEN_WIDTH - 120 y:SCREEN_HEIGHT - 50 layer:1000]
+[button_listen call:"savephoto_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+[macro name:"savephoto_close" params:"args"]
+  [subwindow_fadeout]
+  [button_show]
+  [button_enable]
+  [textbox_show "model_name"]
+  
+  [send_message type:"MORPH_SHOW"]
+[endmacro]
+[listen call:"savephoto_close" event:"SAVEPHOTO_CLOSE"]
+
+;-------------------------------------------------------------------------
+; 最初のフォーカス
+;-------------------------------------------------------------------------
+[foreach from:$share["actors"] item:$actor key:$id]
+  [forcus_change $id camera:false]
+  [break]
+[endforeach]

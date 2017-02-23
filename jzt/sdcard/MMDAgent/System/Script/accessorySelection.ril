@@ -1,0 +1,122 @@
+[include "system\script\interface.ril"]
+
+[const PATH = "Accessory"]
+
+[let $list]
+[let $select_list]
+
+;-----
+
+; アクセサリ読み込みマクロ
+[macro name:"accessory_load" params:"alias, model, config"]
+  [set $position][strtok src:$config["basic"]["position"] delimiter:","]
+  [set $rotate][strtok src:$config["basic"]["rotate"] delimiter:","]
+  [let $file = $config["path"].$config["basic"]["model"]]
+  [model_add alias:"accse".$alias file:$file x:$position[0] y:$position[1] z:$position[2] rx:$rotate[0] ry:$rotate[1] rz:$rotate[2] parent:$model bone:$config["basic"]["bone"]]
+  [let $file = $config["path"].$config["basic"]["motion"]]
+  [motion_add alias:"base" model:"accse".$alias file:$file repeat:LOOP]
+[endmacro]
+
+; 着ける
+[macro name:"button_press" params:"args"]
+  [let $alias = $args[0][0]]
+
+  ; モデル
+  [accessory_load alias:$alias model:"dancer" config:$list[$alias]]
+
+  [let $select_list[$alias] = $list[$alias]]
+
+  [button_switcher $args]
+[endmacro]
+
+; 選択
+[macro name:"button_hover" params:"args"]
+  [let $id = $args[0][0]]
+  [let $config = $list[$id]]
+
+  ; 作者
+  [textbox alias:"author".$id layer:1 fontsize:14]AUTHOR [ch $config["basic"]["author"]][endtextbox]
+;  [textbox_color alias:"author".$id red:0 green:0 blue:0]
+  [textbox_move alias:"author".$id x:30 y:280 absolute:true]
+  [textbox_show alias:"author".$id]
+[endmacro]
+
+; 離す
+[macro name:"button_unhover" params:"args"]
+  [let $alias = $args[0][0]]
+  [image_delete alias:"cover".$alias]
+  [textbox_delete alias:"author".$alias]
+[endmacro]
+
+; 外す
+[macro name:"button_release" params:"args"]
+  [let $alias = $args[0][0]]
+  [model_delete "accse".$alias]
+  [unset select_list[$alias]]
+  [button_neutral $args]
+[endmacro]
+
+; フェードインし終わった
+[macro name:"accessory_button_neutral" params:"args"]
+  [let $alias = $args[0][0]]
+  ; アクセサリの読み込み
+  [set $isnull][isnull $share["accessory"][$alias]]
+  [if $isnull]
+    [button_neutral $args]
+  [else]
+    [button_press $args]
+  [endif]
+[endmacro]
+
+; モデルの読み込み
+[camera x:0 y:0 z:0]
+[model_add alias:"dancer" file:$share["dancer"]["path"].$share["dancer"]["basic"]["model"] x:-10 y:-10 z:-80]
+[motion_add alias:"base" model:"dancer" file:"system\motion\walk\walk.vmd" repeat:LOOP]
+
+; 設定ファイルを読み込む
+[let $x = 280]
+[let $y = 50]
+[set $folders][dir path:PATH]
+[foreach from:$folders item:$path]
+  [let $path = PATH."\\".$path]
+  [set $isdir][isdir path:$path]
+  [if $isdir]
+    [let $path .= "\\"]
+    [set $files][dir path:$path ext:"ini"]
+    [foreach from:$files item:$file]
+      [set $config][ini $path.$file]
+      [let $config["path"] = $path]
+      [let $config["file"] = $file]
+      [set $alias][button text:$config["basic"]["title"] file:"system\image\button02.png" x:$x y:$y width:100 height:64]
+      [button_listen call:"button_hover" event:BUTTON_EVENT_HOVER alias:$alias]
+      [button_listen call:"button_press" event:BUTTON_EVENT_PRESS alias:$alias]
+      [button_listen call:"button_unhover" event:BUTTON_EVENT_UNHOVER alias:$alias]
+      [button_listen call:"button_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+      [button_listen call:"button_unhover" event:BUTTON_EVENT_DELETE alias:$alias]
+      [button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+      [button_listen call:"accessory_button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+      [let $list[$alias] = $config]
+      [let $x += 110]
+      [if $x >= SCREEN_WIDTH - 50][let $x = 280][let $y += 70][endif]
+    [endforeach]
+  [endif]
+[endforeach]
+
+[macro name:"release"]
+  [model_delete "dancer"]
+  [button_delete][button_waitdelete]
+
+  [let $share["accessory"] = $select_list]
+  [send_message type:"ACCESSORY_SELECTED"]
+
+  [kill]
+[endmacro]
+
+; 決定
+[macro name:"ok_press" params:"args"]
+  [thread][release][endthread]
+[endmacro]
+[set $alias][button_small text:"OK" x:500 y:300]
+[button_listen call:"ok_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]

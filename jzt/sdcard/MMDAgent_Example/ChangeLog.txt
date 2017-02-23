@@ -1,0 +1,2679 @@
+2013-12-24 [r250]  uratec:
+
+	* MMDAgent_Example/Motion/mei_breath/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Accessory/menu/menu.pmd,
+	  MMDAgent_Example/Motion/mei_panel/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt,
+	  MMDAgent_Example/Model/mei_winter_blazer/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/mei_wait/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_imagine/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_call/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_idle/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_bye/COPYRIGHT.txt,
+	  MMDAgent_Example/Stage/building2/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Motion/mei_hand_shake/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/COPYRIGHT.txt,
+	  MMDAgent_Example/Model/mei_blue_jacket/README.txt (added),
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.pmd,
+	  MMDAgent_Example/Model/mei_winter_blazer/mei_winter_blazer.pmd,
+	  MMDAgent_Example/Motion/mei_guide/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_flash/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Motion/mei_call/README.txt,
+	  MMDAgent_Example/Accessory/map/map_library.pmd,
+	  MMDAgent_Example/Motion/mei_look/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_bye/README.txt,
+	  MMDAgent_Example/Motion/mei_breath/COPYRIGHT.txt,
+	  MMDAgent_Example/Voice/mei/README.txt (added),
+	  MMDAgent_Example/Model/mei_black_jacket/mei_black_jacket.pmd,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Model/mei/COPYRIGHT.txt,
+	  MMDAgent_Example/Model/mei_black_jacket/README.txt (added),
+	  MMDAgent_Example/Model/mei/mei.pmd,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/COPYRIGHT.txt,
+	  MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Motion/mei_point/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.png,
+	  MMDAgent_Example/Motion/mei_laugh/COPYRIGHT.txt,
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Model/mei_gray_jacket/README.txt (added),
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Accessory/map/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Model/mei_gray_jacket/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Expression/mei_anger/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/README.txt,
+	  MMDAgent_Example/Model/mei_blue_jacket/mei_blue_jacket.pmd,
+	  MMDAgent_Example/Accessory/bootscreen/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/menu/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_guts/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Motion/mei_hand_shake/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Motion/mei_guts/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Motion/mei_flash/README.txt,
+	  MMDAgent_Example/Model/mei_gray_jacket/mei_gray_jacket.pmd,
+	  MMDAgent_Example/Accessory/bootscreen/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh/README.txt,
+	  MMDAgent_Example/Model/mei_winter_blazer/README.txt (added),
+	  MMDAgent_Example/Model/mei_black_jacket/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/menu_rotation/COPYRIGHT.txt: Update
+	  documents for version 1.4.
+
+2013-12-24 [r249]  uratec:
+
+	* MMDAgent_Example/Expression/mei_anger/mei_anger.vmd,
+	  MMDAgent_Example/Expression/mei_bashfulness/mei_bashfulness.vmd,
+	  MMDAgent_Example/Motion/mei_wait/mei_wait.vmd,
+	  MMDAgent_Example/Expression/mei_sadness/mei_sadness.vmd,
+	  MMDAgent_Example/Expression/mei_happiness/mei_happiness.vmd:
+	  Update motions.
+
+2013-12-24 [r248]  uratec:
+
+	* MMDAgent_Example/Motion/sd_mei_greeting/sd_mei_greeting.vmd
+	  (added), MMDAgent_Example/Motion/sd_mei_wait/sd_mei_wait.vmd
+	  (added), MMDAgent_Example/Motion/sd_mei_confusion/README.txt
+	  (added), MMDAgent_Example/Motion/sd_mei_bye (added),
+	  MMDAgent_Example/Motion/sd_mei_greeting/README.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_sadness/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_bashfulness/README.txt
+	  (added), MMDAgent_Example/Motion/sd_mei_guts (added),
+	  MMDAgent_Example/Expression/sd_mei_confusion/COPYRIGHT.txt
+	  (added), MMDAgent_Example/Motion/sd_mei_guide/COPYRIGHT.txt
+	  (added), MMDAgent_Example/Model/sd_mei/README.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_anger (added),
+	  MMDAgent_Example/Motion/sd_mei_confusion/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_sadness (added),
+	  MMDAgent_Example/Motion/sd_mei_wait/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_bashfulness/COPYRIGHT.txt
+	  (added), MMDAgent_Example/Expression/sd_mei_confusion (added),
+	  MMDAgent_Example/Motion/sd_mei_guide (added),
+	  MMDAgent_Example/Motion/sd_mei_guts/README.txt (added),
+	  MMDAgent_Example/Model/sd_mei/sd_mei.png (added),
+	  MMDAgent_Example/Motion/sd_mei_guide/sd_mei_guide_happy.vmd
+	  (added), MMDAgent_Example/Model/sd_mei/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_anger/README.txt (added),
+	  MMDAgent_Example/Motion/sd_mei_confusion (added),
+	  MMDAgent_Example/Motion/sd_mei_wait (added),
+	  MMDAgent_Example/Expression/sd_mei_sadness/README.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_confusion/sd_mei_confusion.vmd
+	  (added), MMDAgent_Example/Expression/sd_mei_bashfulness (added),
+	  MMDAgent_Example/Motion/sd_mei_guts/sd_mei_guts.vmd (added),
+	  MMDAgent_Example/Expression/sd_mei_happiness/COPYRIGHT.txt
+	  (added), MMDAgent_Example/Model/sd_mei (added),
+	  MMDAgent_Example/Motion/sd_mei_confusion/sd_mei_confusion.vmd
+	  (added), MMDAgent_Example/Motion/sd_mei_wait/README.txt (added),
+	  MMDAgent_Example/Motion/sd_mei_self_introduction/COPYRIGHT.txt
+	  (added),
+	  MMDAgent_Example/Expression/sd_mei_happiness/sd_mei_happiness.vmd
+	  (added), MMDAgent_Example/Expression/sd_mei_happiness (added),
+	  MMDAgent_Example/Motion/sd_mei_guide/sd_mei_guide_sad.vmd
+	  (added),
+	  MMDAgent_Example/Expression/sd_mei_anger/sd_mei_anger.vmd
+	  (added),
+	  MMDAgent_Example/Expression/sd_mei_bashfulness/sd_mei_bashfulness.vmd
+	  (added),
+	  MMDAgent_Example/Motion/sd_mei_self_introduction/sd_mei_self_introduction.vmd
+	  (added), MMDAgent_Example/Motion/sd_mei_bye/README.txt (added),
+	  MMDAgent_Example/Motion/sd_mei_greeting/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Model/sd_mei/sd_mei.pmd (added),
+	  MMDAgent_Example/Motion/sd_mei_self_introduction (added),
+	  MMDAgent_Example/Expression/sd_mei_sadness/sd_mei_sadness.vmd
+	  (added), MMDAgent_Example/Expression/sd_mei_happiness/README.txt
+	  (added), MMDAgent_Example/Motion/sd_mei_bye/sd_mei_bye.vmd
+	  (added), MMDAgent_Example/Motion/sd_mei_greeting (added),
+	  MMDAgent_Example/Motion/sd_mei_bye/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/sd_mei_self_introduction/README.txt
+	  (added),
+	  MMDAgent_Example/Motion/sd_mei_guide/sd_mei_guide_normal.vmd
+	  (added), MMDAgent_Example/Expression/sd_mei_confusion/README.txt
+	  (added), MMDAgent_Example/Motion/sd_mei_guide/README.txt (added),
+	  MMDAgent_Example/Motion/sd_mei_guts/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/sd_mei_anger/COPYRIGHT.txt (added):
+	  Add 3D model and motions for SD Mei.
+
+2013-12-20 [r236-237]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.ojt: Update TTS config file.
+
+	* MMDAgent_Example/Voice/mei_normal (removed),
+	  MMDAgent_Example/Voice/mei/mei_angry.htsvoice (added),
+	  MMDAgent_Example/Voice/mei/mei_happy.htsvoice (added),
+	  MMDAgent_Example/Voice/mei (added),
+	  MMDAgent_Example/Voice/mei_angry (removed),
+	  MMDAgent_Example/Voice/mei/mei_bashful.htsvoice (added),
+	  MMDAgent_Example/Voice/mei_happy (removed),
+	  MMDAgent_Example/Voice/mei/mei_sad.htsvoice (added),
+	  MMDAgent_Example/Voice/mei_bashful (removed),
+	  MMDAgent_Example/Voice/mei/mei_normal.htsvoice (added),
+	  MMDAgent_Example/Voice/mei/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Voice/mei_sad (removed): Convert HTS Voices to
+	  new format.
+
+2013-02-19 [r224]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: fix typos.
+
+2012-12-25 [r221]  uratec:
+
+	* MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/Motion/mei_hand_shake/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_breath/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/README.txt,
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt,
+	  MMDAgent_Example/Motion/mei_bye/README.txt,
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Motion/mei_flash/README.txt (added),
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Motion/mei_guts/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Accessory/bootscreen/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh/README.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Motion/mei_flash/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Motion/mei_call/README.txt (added),
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Motion/mei_guts/README.txt (added),
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Motion/mei_hand_shake/README.txt (added),
+	  MMDAgent_Example/Motion/mei_call/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt: Update
+	  documents to version 1.3.1.
+
+2012-12-25 [r220]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: Fix the rePos option and
+	  typos.
+
+2012-12-25 [r219]  uratec:
+
+	* MMDAgent_Example/Motion/mei_imagine/mei_imagine_forward_small.vmd
+	  (added), MMDAgent_Example/Motion/mei_guts (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_left_normal.vmd
+	  (added), MMDAgent_Example/Motion/mei_guts/mei_guts.vmd (added),
+	  MMDAgent_Example/Motion/mei_hand_shake (added),
+	  MMDAgent_Example/Motion/mei_hand_shake/mei_hand_shake.vmd
+	  (added), MMDAgent_Example/Motion/mei_flash (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_forward_normal.vmd
+	  (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_right.vmd
+	  (removed), MMDAgent_Example/Motion/mei_idle/mei_idle_sleep.vmd
+	  (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_left_small.vmd
+	  (added), MMDAgent_Example/Motion/mei_call/mei_call.vmd (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_right_normal.vmd
+	  (added), MMDAgent_Example/Motion/mei_flash/mei_flash.vmd (added),
+	  MMDAgent_Example/Motion/mei_call (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_left.vmd
+	  (removed): Add some motion files.
+
+2012-12-25 [r218]  uratec:
+
+	* MMDAgent_Example/Model/mei_black_jacket/hair01.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/hair02.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/hair03.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/hair04.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/neck.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/skirt.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/corsage.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/hand.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/blouse.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/skirt.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/skirt.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/shoes.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/face.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/mei_blue_jacket.pmd
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/corsage.png
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/hair01.png
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/hair02.png
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/hair03.png
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/hair04.png
+	  (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/mei_blue_jacket.lip
+	  (added), MMDAgent_Example/Model/mei_black_jacket/cheek.png
+	  (added), MMDAgent_Example/Model/mei_black_jacket/eye.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/leg.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/suit.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/hand.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/blazer.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/blouse.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/cheek.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/neck.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/cheek.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/eye.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/leg.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/mei_gray_jacket.pmd
+	  (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/mei_gray_jacket.lip
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/suit.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/blouse.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/shoes.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/corsage.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/hand.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/arm.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/shoes.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/shoes.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/hair01.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/face.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/hair02.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/suit.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/hair03.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/hair04.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/mei_winter_blazer.pmd
+	  (added), MMDAgent_Example/Model/mei_black_jacket/leg.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/mei_winter_blazer.lip
+	  (added), MMDAgent_Example/Model/mei_black_jacket/neck.png
+	  (added), MMDAgent_Example/Model/mei_winter_blazer/leg.png
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/skirt.png
+	  (added),
+	  MMDAgent_Example/Model/mei_black_jacket/mei_black_jacket.pmd
+	  (added), MMDAgent_Example/Model/mei_gray_jacket/face.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/mei_black_jacket.lip
+	  (added), MMDAgent_Example/Model/mei_blue_jacket/eye.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/hair01.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/hair02.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/hair03.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/hair04.png (added),
+	  MMDAgent_Example/Model/mei_winter_blazer/blouse.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/cheek.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/neck.png (added),
+	  MMDAgent_Example/Model/mei_gray_jacket/eye.png (added),
+	  MMDAgent_Example/Model/mei_blue_jacket/face.png (added),
+	  MMDAgent_Example/Model/mei_black_jacket/hand.png (added): Add
+	  five 3D models.
+
+2012-12-25 [r217]  uratec:
+
+	* MMDAgent_Example/Motion/mei_idle/mei_idle_think.vmd,
+	  MMDAgent_Example/Motion/mei_idle/mei_idle_yawn.vmd,
+	  MMDAgent_Example/Motion/mei_breath/mei_breath.vmd,
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_left.vmd,
+	  MMDAgent_Example/Motion/mei_idle/mei_idle_touch_clothes.vmd,
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_right.vmd,
+	  MMDAgent_Example/Motion/mei_laugh/mei_laugh.vmd,
+	  MMDAgent_Example/Motion/mei_self_introduction/mei_self_introduction.vmd:
+	  Update some motion files for latest 3D model.
+
+2012-12-25 [r216]  uratec:
+
+	* MMDAgent_Example/Model/mei/face.png (added),
+	  MMDAgent_Example/Model/mei/leg.bmp (removed),
+	  MMDAgent_Example/Model/mei/te.bmp (removed),
+	  MMDAgent_Example/Model/mei/mei.pmd,
+	  MMDAgent_Example/Model/mei/toon10.bmp (removed),
+	  MMDAgent_Example/Model/mei/vest.bmp (removed),
+	  MMDAgent_Example/Model/mei/eye.bmp (removed),
+	  MMDAgent_Example/Model/mei/neck.png (added),
+	  MMDAgent_Example/Model/mei/shoes.png (added),
+	  MMDAgent_Example/Model/mei/blouse_ribbon.png (added),
+	  MMDAgent_Example/Model/mei/blouse_arm.png (added),
+	  MMDAgent_Example/Model/mei/face.bmp (removed),
+	  MMDAgent_Example/Model/mei/hair1.tga (removed),
+	  MMDAgent_Example/Model/mei/skirt.png (added),
+	  MMDAgent_Example/Model/mei/hair2.tga (removed),
+	  MMDAgent_Example/Model/mei/hair3.tga (removed),
+	  MMDAgent_Example/Model/mei/ude.bmp (removed),
+	  MMDAgent_Example/Model/mei/leg.png (added),
+	  MMDAgent_Example/Model/mei/neck.bmp (removed),
+	  MMDAgent_Example/Model/mei/hand.png (added),
+	  MMDAgent_Example/Model/mei/shoes.bmp (removed),
+	  MMDAgent_Example/Model/mei/cheek.png (added),
+	  MMDAgent_Example/Model/mei/vest.png (added),
+	  MMDAgent_Example/Model/mei/blouse_arm.bmp (removed),
+	  MMDAgent_Example/Model/mei/eye.png (added),
+	  MMDAgent_Example/Model/mei/skirt.tga (removed),
+	  MMDAgent_Example/Model/mei/blouse.bmp (removed),
+	  MMDAgent_Example/Model/mei/hair01.png (added),
+	  MMDAgent_Example/Model/mei/hair02.png (added),
+	  MMDAgent_Example/Model/mei/hair03.png (added),
+	  MMDAgent_Example/Model/mei/hair04.png (added),
+	  MMDAgent_Example/Model/mei/ho.tga (removed): Upgrade Mei 3D
+	  model.
+
+2012-08-01 [r214]  uratec:
+
+	* MMDAgent_Example/Motion/mei_panel/COPYRIGHT.txt,
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_breath/COPYRIGHT.txt,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Model/mei/COPYRIGHT.txt,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/COPYRIGHT.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Motion/mei_guide/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.png,
+	  MMDAgent_Example/Accessory/menu/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_wait/COPYRIGHT.txt,
+	  MMDAgent_Example/Voice/mei_sad/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/COPYRIGHT.txt,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Accessory/map/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Motion/mei_idle/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Voice/mei_angry/COPYRIGHT.txt,
+	  MMDAgent_Example/Stage/building2/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_happiness/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_point/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_breath/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_laugh/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/map/map_library.pmd,
+	  MMDAgent_Example/Motion/mei_look/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_bye/README.txt,
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Model/mei/mei.pmd,
+	  MMDAgent_Example/Motion/mei_bye/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh/README.txt,
+	  MMDAgent_Example/Expression/mei_anger/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/menu/menu.pmd,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Voice/mei_normal/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_listen/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/menu_rotation/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.pmd,
+	  MMDAgent_Example/Motion/mei_imagine/README.txt: Update all
+	  documents to version 1.3.
+
+2011-08-03 [r156]  uratec:
+
+	* MMDAgent_Example/README.txt: fix release date.
+
+2011-08-02 [r154-155]  uratec:
+
+	* MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt,
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Motion/mei_bye/README.txt,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/README.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh/README.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_breath/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/README.txt: update all
+	  documents.
+
+	* MMDAgent_Example/MMDAgent_Example.mdf: remove some options in
+	  .mdf file.
+
+2011-05-01 [r138]  uratec:
+
+	* MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.pmd,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/README.txt,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Motion/mei_bye/README.txt,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_breath/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.png,
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt,
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/README.txt: Update all documents.
+
+2011-04-26 [r133]  uratec:
+
+	* MMDAgent_Example/Voice/mei_normal/gv-mgc.pdf,
+	  MMDAgent_Example/Voice/mei_normal/lf0.pdf,
+	  MMDAgent_Example/Voice/mei_normal/tree-lf0.inf,
+	  MMDAgent_Example/Voice/mei_normal/tree-lpf.inf,
+	  MMDAgent_Example/Voice/mei_angry/dur.pdf,
+	  MMDAgent_Example/Voice/mei_angry/tree-dur.inf,
+	  MMDAgent_Example/Voice/mei_happy/tree-dur.inf,
+	  MMDAgent_Example/Voice/mei_angry/gv-lf0.pdf,
+	  MMDAgent_Example/Voice/mei_happy/tree-gv-lf0.inf,
+	  MMDAgent_Example/Voice/mei_happy/gv-lf0.pdf,
+	  MMDAgent_Example/Voice/mei_sad/tree-mgc.inf,
+	  MMDAgent_Example/Voice/mei_bashful/dur.pdf,
+	  MMDAgent_Example/Voice/mei_bashful/tree-dur.inf,
+	  MMDAgent_Example/Voice/mei_bashful/gv-lf0.pdf,
+	  MMDAgent_Example/Voice/mei_normal/tree-gv-lf0.inf,
+	  MMDAgent_Example/Voice/mei_happy/mgc.pdf,
+	  MMDAgent_Example/Voice/mei_sad/lf0.pdf,
+	  MMDAgent_Example/Voice/mei_normal/mgc.pdf,
+	  MMDAgent_Example/Voice/mei_normal/tree-mgc.inf,
+	  MMDAgent_Example/Voice/mei_angry/gv-mgc.pdf,
+	  MMDAgent_Example/Voice/mei_happy/tree-gv-mgc.inf,
+	  MMDAgent_Example/Voice/mei_happy/gv-mgc.pdf,
+	  MMDAgent_Example/Voice/mei_angry/lf0.pdf,
+	  MMDAgent_Example/Voice/mei_angry/tree-lf0.inf,
+	  MMDAgent_Example/Voice/mei_angry/tree-lpf.inf,
+	  MMDAgent_Example/Voice/mei_sad/tree-dur.inf,
+	  MMDAgent_Example/Voice/mei_happy/tree-lf0.inf,
+	  MMDAgent_Example/Voice/mei_happy/tree-lpf.inf,
+	  MMDAgent_Example/Voice/mei_sad/gv-lf0.pdf,
+	  MMDAgent_Example/Voice/mei_sad/tree-gv-lf0.inf,
+	  MMDAgent_Example/Voice/mei_bashful/gv-mgc.pdf,
+	  MMDAgent_Example/Voice/mei_bashful/tree-lpf.inf,
+	  MMDAgent_Example/Voice/mei_bashful/tree-lf0.inf,
+	  MMDAgent_Example/Voice/mei_bashful/lf0.pdf,
+	  MMDAgent_Example/Voice/mei_normal/tree-gv-mgc.inf,
+	  MMDAgent_Example/Voice/mei_happy/dur.pdf,
+	  MMDAgent_Example/Voice/mei_angry/tree-gv-lf0.inf,
+	  MMDAgent_Example/Voice/mei_sad/mgc.pdf,
+	  MMDAgent_Example/Voice/mei_bashful/tree-gv-lf0.inf,
+	  MMDAgent_Example/Voice/mei_normal/dur.pdf,
+	  MMDAgent_Example/Voice/mei_normal/tree-dur.inf,
+	  MMDAgent_Example/Voice/mei_normal/gv-lf0.pdf,
+	  MMDAgent_Example/Voice/mei_angry/mgc.pdf,
+	  MMDAgent_Example/Voice/mei_angry/tree-mgc.inf,
+	  MMDAgent_Example/Voice/mei_happy/tree-mgc.inf,
+	  MMDAgent_Example/Voice/mei_sad/gv-mgc.pdf,
+	  MMDAgent_Example/Voice/mei_sad/tree-gv-mgc.inf,
+	  MMDAgent_Example/Voice/mei_sad/tree-lf0.inf,
+	  MMDAgent_Example/Voice/mei_sad/tree-lpf.inf,
+	  MMDAgent_Example/Voice/mei_bashful/mgc.pdf,
+	  MMDAgent_Example/Voice/mei_bashful/tree-mgc.inf,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Voice/mei_angry/tree-gv-mgc.inf,
+	  MMDAgent_Example/Voice/mei_sad/dur.pdf,
+	  MMDAgent_Example/Voice/mei_happy/lf0.pdf,
+	  MMDAgent_Example/Voice/mei_bashful/tree-gv-mgc.inf: Fix typos.
+	  Re-train all acoustic models for TTS.
+
+2011-04-19 [r131]  uratec:
+
+	* MMDAgent_Example/Accessory/map/map_library.pmd,
+	  MMDAgent_Example/Motion/mei_bye/README.txt,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/README.txt (added),
+	  MMDAgent_Example/Motion/mei_laugh/README.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.png (added),
+	  MMDAgent_Example/Accessory/bootscreen/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen (added),
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_breath/README.txt,
+	  MMDAgent_Example/Accessory/bootscreen/bootscreen.pmd (added),
+	  MMDAgent_Example/Motion/mei_imagine/README.txt,
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt: add boot screen.
+
+2011-03-09 [r127]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: Fix a tiny bug.
+
+2011-03-03 [r126]  uratec:
+
+	* MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/COPYRIGHT.txt (added),
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise (added),
+	  MMDAgent_Example/Motion/mei_bye/mei_bye.vmd (added),
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_breath/README.txt (added),
+	  MMDAgent_Example/Motion/mei_imagine/README.txt (added),
+	  MMDAgent_Example/Motion/mei_laugh/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/README.txt (added),
+	  MMDAgent_Example/Motion/mei_breath/mei_breath.vmd (added),
+	  MMDAgent_Example/Motion/mei_bye/README.txt (added),
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Motion/mei_breath/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh (added),
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.ojt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Motion/mei_breath (added),
+	  MMDAgent_Example/Motion/mei_bye/COPYRIGHT.txt (added),
+	  MMDAgent_Example/MMDAgent_Example.dic (added),
+	  MMDAgent_Example/Motion/mei_idle/mei_idle_yawn.vmd (added),
+	  MMDAgent_Example/Motion/mei_panel/mei_panel_off.vmd (added),
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine (added),
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_left.vmd (added),
+	  MMDAgent_Example/Motion/mei_laugh/README.txt (added),
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/mei_surprise_normal.vmd
+	  (added), MMDAgent_Example/Motion/mei_bye (added),
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Motion/mei_laugh/mei_laugh.vmd (added),
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Motion/mei_idle/README.txt,
+	  MMDAgent_Example/Motion/mei_imagine/mei_imagine_right.vmd
+	  (added), MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Motion/mei_surprise/mei_surprise_small.vmd
+	  (added), MMDAgent_Example/Motion/mei_guide/mei_guide_sad.vmd
+	  (added): Add some motions. Add web-browsing, full-screen, and
+	  bye-bye tasks.
+
+2011-02-14 [r117]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: add VALUE_* description to
+	  sample scripts.
+
+2011-02-02 [r107]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: Extend idle time.
+
+2011-02-02 [r106]  uratec:
+
+	* MMDAgent_Example/Motion/mei_idle/mei_idle_think.vmd (added),
+	  MMDAgent_Example/Motion/mei_idle/README.txt (added),
+	  MMDAgent_Example/Expression/mei_sadness/mei_sadness.vmd,
+	  MMDAgent_Example/NEWS.txt,
+	  MMDAgent_Example/Motion/mei_idle/mei_idle_touch_clothes.vmd
+	  (added), MMDAgent_Example/Motion/mei_idle (added),
+	  MMDAgent_Example/Expression/mei_happiness/mei_happiness.vmd,
+	  MMDAgent_Example/Motion/mei_idle/mei_idle_boredom.vmd (added),
+	  MMDAgent_Example/Expression/mei_anger/mei_anger.vmd,
+	  MMDAgent_Example/Expression/mei_bashfulness/mei_bashfulness.vmd,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/MMDAgent_Example.ojt,
+	  MMDAgent_Example/Motion/mei_idle/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/mei_listen/mei_listen.vmd: Add idle
+	  motions. Re-define state number.
+
+2011-02-02 [r102]  uratec:
+
+	* MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Accessory/map/README.txt,
+	  MMDAgent_Example/Voice/mei_normal/tree-pdr.inf (removed),
+	  MMDAgent_Example/Voice/mei_normal/pdr.pdf (removed): Update
+	  README.txt.
+
+2011-01-31 [r97]  uratec:
+
+	* MMDAgent_Example/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/MMDAgent_Example.ojt: Rename sample scripts.
+
+2011-01-31 [r95]  uratec:
+
+	* MMDAgent_Example/NEWS.txt (added),
+	  MMDAgent_Example/MMDAgent_Example.fst: Add NEWS.txt.
+
+2011-01-31 [r93]  uratec:
+
+	* MMDAgent_Example/Voice/mei_angry/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/README.txt,
+	  MMDAgent_Example/Expression/mei_happiness/README.txt,
+	  MMDAgent_Example/Model/mei/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_listen/README.txt,
+	  MMDAgent_Example/Voice/mei_normal/README.txt,
+	  MMDAgent_Example/Model/mei/mei.pmd,
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt,
+	  MMDAgent_Example/Voice/mei_happy/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_guide/README.txt,
+	  MMDAgent_Example/Expression/mei_anger/COPYRIGHT.txt,
+	  MMDAgent_Example/README.txt,
+	  MMDAgent_Example/Motion/mei_look/README.txt,
+	  MMDAgent_Example/Motion/mei_greeting/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/README.txt,
+	  MMDAgent_Example/Voice/mei_sad/README.txt,
+	  MMDAgent_Example/Accessory/menu/menu.pmd,
+	  MMDAgent_Example/Motion/mei_guide/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/map/README.txt (added),
+	  MMDAgent_Example/Accessory/menu/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_wait/COPYRIGHT.txt,
+	  MMDAgent_Example/Voice/mei_sad/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_bashfulness/COPYRIGHT.txt,
+	  MMDAgent_Example/Stage/building2/README.txt,
+	  MMDAgent_Example/Accessory/map/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/mei_anger/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Motion/mei_point/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/README.txt,
+	  MMDAgent_Example/Expression/mei_sadness/README.txt,
+	  MMDAgent_Example/Voice/mei_angry/COPYRIGHT.txt,
+	  MMDAgent_Example/Stage/building2/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_happiness/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_panel/README.txt,
+	  MMDAgent_Example/Voice/mei_bashful/COPYRIGHT.txt,
+	  MMDAgent_Example/Accessory/menu/README.txt,
+	  MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Voice/mei_normal/COPYRIGHT.txt,
+	  MMDAgent_Example/Expression/mei_listen/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_point/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_wait/README.txt,
+	  MMDAgent_Example/Motion/menu_rotation/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_self_introduction/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_panel/COPYRIGHT.txt,
+	  MMDAgent_Example/Model/mei/README.txt,
+	  MMDAgent_Example/Motion/mei_look/COPYRIGHT.txt,
+	  MMDAgent_Example/Motion/mei_greeting/COPYRIGHT.txt: Update all
+	  copyright description from 2010 to 2011.
+
+2011-01-31 [r89]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.mdf: Add MDF
+	  parameter(cartoon_edge_selected_color, rendering_rotation,
+	  rendering_transition, rendering_scale).
+
+2011-01-18 [r58]  uratec:
+
+	* MMDAgent_Example/Model/mei/mei.lip (added): Add lipsync
+	  definition file of Mei.
+
+2011-01-13 [r56]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Expression/mei_listen/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/mei_listen/README.txt (added),
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Expression/mei_listen/mei_listen.vmd (added),
+	  MMDAgent_Example/Expression/mei_listen (added): Add listening
+	  expression.
+
+2011-01-13 [r55]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.mdf: Add display_comment_frame
+	  to MDF.
+
+2011-01-13 [r52-53]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: Fix a typo of file path.
+
+	* MMDAgent_Example/Motion/mei_point/mei_point_left_center.vmd
+	  (added), MMDAgent_Example/Motion/mei_point/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_right_top.vmd
+	  (added), MMDAgent_Example/Motion/mei_panel/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_right_buttom.vmd
+	  (added), MMDAgent_Example/Motion/mei_point (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_center_buttom.vmd
+	  (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_right_center.vmd
+	  (added), MMDAgent_Example/Motion/mei_panel (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_center_center.vmd
+	  (added), MMDAgent_Example/Motion/menu_rotation/menu_rotation.vmd,
+	  MMDAgent_Example/Motion/mei_self_introduction/mei_self_introduction.vmd,
+	  MMDAgent_Example/Motion/mei_point/README.txt (added),
+	  MMDAgent_Example/Accessory/map (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_lef_top.vmd (added),
+	  MMDAgent_Example/Motion/mei_panel/README.txt (added),
+	  MMDAgent_Example/Motion/mei_guide/mei_guide_happy.vmd (added),
+	  MMDAgent_Example/Motion/mei_look/mei_look_down.vmd (added),
+	  MMDAgent_Example/Motion/mei_look/README.txt (added),
+	  MMDAgent_Example/Motion/mei_guide/mei_guide_normal.vmd (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_center_top.vmd
+	  (added), MMDAgent_Example/Motion/mei_guide/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Accessory/map/map_library.tga (added),
+	  MMDAgent_Example/Motion/mei_wait/mei_wait.vmd,
+	  MMDAgent_Example/Motion/mei_greeting/mei_greeting.vmd,
+	  MMDAgent_Example/Accessory/map/map_library.pmd (added),
+	  MMDAgent_Example/Motion/mei_look/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Motion/mei_guide (added),
+	  MMDAgent_Example/MMDAgent_Example.fst,
+	  MMDAgent_Example/Motion/mei_look (added),
+	  MMDAgent_Example/Motion/mei_point/mei_point_left_buttom.vmd
+	  (added), MMDAgent_Example/Motion/mei_guide/README.txt (added),
+	  MMDAgent_Example/Motion/mei_panel/mei_panel_on.vmd (added): Add
+	  FST samples and motions.
+
+2011-01-11 [r43]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: Add help message in FST.
+
+2011-01-10 [r41]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.ojt: Add comments to voice
+	  definition file.
+
+2011-01-04 [r31]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.fst: Rename menu motion alias.
+
+2011-01-03 [r27]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/MMDAgent_Example.fst: Rewrite users option class
+	  to restrict max/min values.
+
+2010-12-29 [r24]  uratec:
+
+	* MMDAgent_Example/MMDAgent_Example.mdf,
+	  MMDAgent_Example/Stage/building2/background.bmp (added),
+	  MMDAgent_Example/Stage/building2/back.bmp (removed): Add 'stage'
+	  to config file instead of 'floor_bmp' and 'back_bmp'.
+
+2010-12-25 [r2]  uratec:
+
+	* MMDAgent/MMDAgent/MMDAgent_command.cpp (added),
+	  MMDAgent_Example/Voice/mei_angry/mgc.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btSerializer.h
+	  (added), MMDAgent/MMDAgent/MMDAgent.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/jcontrol/00readme-ja.txt (added),
+	  MMDAgent_Example/Voice/mei_bashful/tree-gv-mgc.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/mutex.h (added),
+	  MMDAgent/Library_Julius/src/jcontrol/jcontrol.c (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab2njd/mecab2njd.c (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/backtrellis.c (added),
+	  MMDAgent_Example/Voice/mei_normal/lf0.win1 (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/lpfcoef_2to1.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab2njd/mecab2njd.h
+	  (added), MMDAgent_Example/Voice/mei_normal/lf0.win2 (added),
+	  MMDAgent_Example/Voice/mei_normal/lf0.win3 (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/viterbisub.h (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp/SampleApp.vcproj
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btAabbUtil2.h
+	  (added), MMDAgent/Library_Julius/src/Makefile.in (added),
+	  MMDAgent/Library_Open_JTalk/src/Makefile.am (added),
+	  MMDAgent/MMDAgent/Audio.cpp (added), MMDAgent_Example/Voice
+	  (added), MMDAgent_Example/Voice/mei_sad (added),
+	  MMDAgent_Example/Voice/mei_angry/tree-lf0.inf (added),
+	  MMDAgent_Example/Voice/mei_happy/tree-gv-mgc.inf (added),
+	  MMDAgent/Library_Bullet_Physics/lib (added),
+	  MMDAgent_Example/Voice/mei_bashful/gv-switch.inf (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/factoring_sub.c
+	  (added), MMDAgent/Library_Julius/src/gramtools/generate (added),
+	  MMDAgent/Library_Julius/src/man/dfa_minimize.1 (added),
+	  MMDAgent/Library_Julius/src/libsent/libsent-config.in (added),
+	  MMDAgent/Library_Open_JTalk/src/text2mecab/text2mecab_rule_euc_jp.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/mkdfa/Makefile.in
+	  (added), MMDAgent_Example/Accessory (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/jlog.c (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/Makefile.mak
+	  (added), MMDAgent/Library_Open_JTalk (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath (added),
+	  MMDAgent_Example/Voice/mei_bashful/tree-mgc.inf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/PosixThreadSupport.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/gprune_beam.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_tcpip.c
+	  (added), MMDAgent/Library_MMDFiles (added),
+	  MMDAgent_Example/Model/mei/eye.bmp (added),
+	  MMDAgent_Example/MMDAgent_Example.mdf (added),
+	  MMDAgent/Library_MMDFiles/src/lib/VMD.cpp (added),
+	  MMDAgent/Plugin_Julius (added),
+	  MMDAgent/Release/AppData/toon04.bmp (added),
+	  MMDAgent_Example/Voice/mei_normal/lf0.pdf (added),
+	  MMDAgent/Library_Julius/include/julius (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_regtree.c
+	  (added), MMDAgent/Library_Open_JTalk/src (added),
+	  MMDAgent/Plugin_Open_JTalk (added),
+	  MMDAgent/Library_MMDFiles/src/lib/SystemTexture.cpp (added),
+	  MMDAgent_Example/Voice/mei_sad/gv-switch.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/dictionary_rewriter.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/quat_aos.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/lbfgs.cpp
+	  (added),
+	  MMDAgent_Example/Motion/mei_self_introduction/mei_self_introduction.vmd
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/strcasecmp.c
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/m_fusion.c
+	  (added), MMDAgent/Library_Julius/src/julius/libjcode/Doc (added),
+	  MMDAgent/Library_Julius/src/msvc/zlib/zlib.h (added),
+	  MMDAgent/Library_Julius/src/libsent/src/wav2mfcc (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/param.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/param_malloc.c
+	  (added), MMDAgent/Plugin_Open_JTalk/Plugin_Open_JTalk.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Vehicle/btWheelInfo.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_dens.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/njd_set_pronunciation_rule_euc_jp.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src (added),
+	  MMDAgent/Library_hts_engine_API (added),
+	  MMDAgent_Example/Motion/mei_greeting/mei_greeting.vmd (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/freelist.h (added),
+	  MMDAgent_Example/Motion/mei_greeting/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btStaticPlaneShape.h
+	  (added), MMDAgent_Example/Voice/mei_sad/gv-mgc.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/TrbDynBody.h
+	  (added), MMDAgent_Example/Voice/mei_sad/tree-lpf.inf (added),
+	  MMDAgent/Library_Julius/src/mkgshmm/configure (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/TrbStateVec.h
+	  (added), MMDAgent_Example/Voice/mei_sad/lpf.win1 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/Makefile.in
+	  (added), MMDAgent/MMDAgent/main.rc (added),
+	  MMDAgent/Library_Julius/src/julius/charconv_iconv.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btTriangleShapeEx.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_mpdf.c
+	  (added),
+	  MMDAgent/Library_Julius/src/julius/libjcode/Doc/rfc1554.txt
+	  (added), MMDAgent/Library_Open_JTalk/src/njd/njd_rule_euc_jp.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/Makefile.mak
+	  (added), MMDAgent_Example/Voice/mei_normal/tree-lf0.inf (added),
+	  MMDAgent/Library_Julius/src/generate-ngram/00readme.txt (added),
+	  MMDAgent/MMDAgent/TextRenderer.h (added),
+	  MMDAgent/Library_Julius/src/mkbingram (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmlist.c
+	  (added), MMDAgent/Library_MMDFiles/src/lib/KinematicMotionState.h
+	  (added), MMDAgent/MMDAgent/LipSync.h (added),
+	  MMDAgent/Library_Julius/src/plugin/adin_oss.c (added),
+	  MMDAgent/Plugin_VIManager/VIManager_Thread.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_basic_geometry_operations.h
+	  (added), MMDAgent/Library_MMDFiles/src/include/PMDConstraint.h
+	  (added), MMDAgent_Example/Expression (added),
+	  MMDAgent/Plugin_Open_JTalk/Plugin_Open_JTalk.vcproj (added),
+	  MMDAgent/Library_Julius/src/julius-simple/julius-simple.c
+	  (added), MMDAgent/Library_Bullet_Physics/lib/Bullet_Physics.lib
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
+	  (added), MMDAgent_Example/Model/mei/shoes.bmp (added),
+	  MMDAgent_Example/Voice/mei_bashful/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/tcpip.h (added),
+	  MMDAgent/Library_PortAudio (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/strip_mfcc.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btContactProcessing.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/writer.cpp
+	  (added), MMDAgent/MMDAgent (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/njd_set_accent_phrase_rule_utf_8.h
+	  (added), MMDAgent/Library_Julius/src/jcontrol/japi_misc.c
+	  (added), MMDAgent/Library_hts_engine_API/src/bin (added),
+	  MMDAgent/Library_Open_JTalk/COPYRIGHT.txt (added),
+	  MMDAgent/Plugin_Open_JTalk/Open_JTalk_Thread.cpp (added),
+	  MMDAgent_Example/Voice/mei_sad/mgc.win1 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/Makefile.in
+	  (added), MMDAgent_Example/Voice/mei_sad/mgc.win2 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btDefaultSoftBodySolver.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h
+	  (added), MMDAgent_Example/Voice/mei_sad/mgc.win3 (added),
+	  MMDAgent_Example/Stage/building2/README.txt (added),
+	  MMDAgent/Library_Julius/src/msvc/julius (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_convert.c
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/HTS_sstream.c
+	  (added), MMDAgent/Release/AppData/Open_JTalk/unk.dic (added),
+	  MMDAgent/Library_zlib/include/zconf.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_box_set.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/outprob_init.c
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/ucs.h (added),
+	  MMDAgent/MMDAgent/Stage.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btStackAlloc.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/feature.def
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/Makefile.mak
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpuUtilsSharedDefs.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btPointCollector.h
+	  (added), MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon.c
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/gram2sapixml/gram2sapixml.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_determinize/00readme-ja.txt
+	  (added), MMDAgent/Library_Julius/src/jcontrol/japi.h (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon.h (added),
+	  MMDAgent_Example/Stage/building2/floor.bmp (added),
+	  MMDAgent/Release/AppData/toon05.bmp (added),
+	  MMDAgent/Library_hts_engine_API/src/lib/HTS_model.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btCollisionDispatcher.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/search_bestfirst_v1.c
+	  (added),
+	  MMDAgent/Library_hts_engine_API/Library_hts_engine_API.vcproj
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/nfa.c
+	  (added), MMDAgent_Example/Motion/menu_rotation (added),
+	  MMDAgent/Library_MMDFiles/src/lib/PMDModel.cpp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_streamweight.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/dfa/init_dfa.c
+	  (added), MMDAgent/Library_Julius/lib (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/mystrtok.c (added),
+	  MMDAgent_Example/Voice/mei_sad/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/nfa.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolverLinkData_DX11.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGImpactShape.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_darwin_coreaudio.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/left-id.def
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpuUtilsSharedCode.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/graph.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/dictionary_compiler.cpp
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/m_usage.c
+	  (added), MMDAgent/Release (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btUnionFind.h
+	  (added), MMDAgent_Example/Voice/mei_angry/lf0.pdf (added),
+	  MMDAgent/Library_zlib (added),
+	  MMDAgent/Library_Julius/src/plugin/calcmix.c (added),
+	  MMDAgent_Example/Expression/mei_anger/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Voice/mei_bashful/lpf.pdf (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/hmm.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/yomi2voca/yomi2voca.pl.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuSync.h
+	  (added), MMDAgent/Library_Julius/src/julius/libjcode/Makefile.in
+	  (added), MMDAgent/Library_hts_engine_API/src/COPYING (added),
+	  MMDAgent/Library_GLee (added),
+	  MMDAgent/Library_Julius/src/mkbingram/00readme-ja.txt (added),
+	  MMDAgent/Library_Julius/src/jclient-perl/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/julius/record.c (added),
+	  MMDAgent_Example/Voice/mei_bashful/tree-gv-lf0.inf (added),
+	  MMDAgent/Library_Julius/src/julius/config.h.in (added),
+	  MMDAgent/Library_Julius/src/jcontrol/Makefile.in (added),
+	  MMDAgent/Library_Open_JTalk/src/configure.ac (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/learner_tagger.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBody.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
+	  (added), MMDAgent_Example/Voice/mei_sad/tree-gv-mgc.inf (added),
+	  MMDAgent/Library_PortAudio/include/portaudio.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btContactConstraint.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_netaudio.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/njd_set_accent_phrase_rule_euc_jp.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/dictionary_rewriter.h
+	  (added), MMDAgent_Example/Motion/mei_greeting (added),
+	  MMDAgent/Plugin_Open_JTalk/Open_JTalk.h (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_state.c
+	  (added), MMDAgent/Library_PortAudio/include/pa_linux_alsa.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon_label.c
+	  (added), MMDAgent/Library_Julius/src/man/ja/dfa_minimize.1
+	  (added), MMDAgent/Library_Julius/src/mkss/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/ptree.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_minimize (added),
+	  MMDAgent_Example/Motion/menu_rotation/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btQuantization.h
+	  (added), MMDAgent/Library_Julius/src/adintool/adintool.c (added),
+	  MMDAgent/Library_Julius/src/man/generate.1 (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/confnet.c (added),
+	  MMDAgent_Example/Voice/mei_happy/tree-gv-lf0.inf (added),
+	  MMDAgent/Release/AppData/Open_JTalk/rewrite.def (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/check_hmm_restriction.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/Box.h
+	  (added), MMDAgent/Library_hts_engine_API/src/bin/hts_engine.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuMinkowskiPenetrationDepthSolver.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/OpenCL/btSoftBodySolver_OpenCL.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/accept_check/common.h
+	  (added), MMDAgent/Library_Open_JTalk/src/text2mecab/Makefile.am
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btCompoundShape.h
+	  (added), MMDAgent/Library_Julius/src/man/ja/dfa_determinize.1
+	  (added), MMDAgent/Library_Open_JTalk/src/Makefile.in (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/boxBoxDistance.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/voca.c
+	  (added), MMDAgent_Example/Voice/mei_bashful/tree-lf0.inf (added),
+	  MMDAgent/Library_GLee/lib/GLee.lib (added),
+	  MMDAgent/Release/AppData/Open_JTalk/matrix.bin (added),
+	  MMDAgent/Library_MMDFiles/src/lib/KinematicMotionState.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio/pa_asio.h
+	  (added), MMDAgent/Library_libpng/lib (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/PlatformDefinitions.h
+	  (added), MMDAgent/MMDAgent/resource.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/vectormath_aos.h
+	  (added), MMDAgent_Example/Model/mei/te.bmp (added),
+	  MMDAgent/Plugin_VIManager/VIManager_Thread.h (added),
+	  MMDAgent/Release/MMDAgent.mdf (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/utils.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBodySolverVertexBuffer.h
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/HTS_hidden.h
+	  (added), MMDAgent/Release/AppData/toon06.bmp (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/search_bestfirst_main.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/ringbuffer.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_bitset.h
+	  (added), MMDAgent/Library_Julius/src/generate-ngram/Makefile.in
+	  (added), MMDAgent/Release/AppData/Julius/phone_m/tri_tied.list
+	  (added), MMDAgent/Library_Julius/src/gramtools/nextword (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/ringbuffer.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuGatheringCollisionTask.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/connector.cpp (added),
+	  MMDAgent/Library_Julius/src/plugin/audio_postprocess.c (added),
+	  MMDAgent/Library_PortAudio/include/pa_win_waveformat.h (added),
+	  MMDAgent/MMDAgent/InternalPlugin_BoneControl.cpp (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/njd_set_unvoiced_vowel_rule_shift_jis.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btIDebugDraw.h
+	  (added), MMDAgent/Release/AppData/Open_JTalk (added),
+	  MMDAgent/Library_Open_JTalk/lib (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/qsort.c (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon (added),
+	  MMDAgent_Example/Voice/mei_sad/gv-lf0.pdf (added),
+	  MMDAgent/Library_Julius/src/generate-ngram/00readme-ja.txt
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/m_adin.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btConvexHull.h
+	  (added), MMDAgent_Example/Voice/mei_happy/lf0.win1 (added),
+	  MMDAgent/Release/AppData/Julius/phone_m (added),
+	  MMDAgent_Example/Voice/mei_happy/lf0.win2 (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/multi-gram.h
+	  (added), MMDAgent_Example/Voice/mei_happy/lf0.win3 (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_linux_alsa.c
+	  (added), MMDAgent/Library_Julius/src/man/accept_check.1 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/njd_set_accent_phrase.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/njd_set_accent_phrase.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/generate.c
+	  (added), MMDAgent/Library_Bullet_Physics/include/vectormath/sse
+	  (added), MMDAgent/Library_Julius/src/man/ja/mkss.1 (added),
+	  MMDAgent_Example/Accessory/menu (added),
+	  MMDAgent/Library_hts_engine_API/src/Makefile.mak (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/connector.h (added),
+	  MMDAgent/Library_Julius/src/support/install-sh (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/triplet.c
+	  (added), MMDAgent/Library_Julius/src/julius/configure (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/pos-id.def
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBodySolvers.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btSphereShape.h
+	  (added), MMDAgent/Library_Julius/src/julius/charconv.c (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/triplet.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGImpactBvh.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_access.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/pa (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/version.c.in (added),
+	  MMDAgent/Library_Julius/src/julius/charconv.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btCollisionShape.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/callback.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btGjkConvexCast.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btMinkowskiSumShape.h
+	  (added), MMDAgent_Example/Voice/mei_normal/lpf.win1 (added),
+	  MMDAgent_Example/Model/mei/hair1.tga (added),
+	  MMDAgent/Library_Julius/src/support/update-mantxt.sh (added),
+	  MMDAgent/Library_Julius/src/mkss/00readme-ja.txt (added),
+	  MMDAgent/Library_Julius/src/plugin/plugin_defs.h (added),
+	  MMDAgent_Example/Voice/mei_happy/mgc.pdf (added),
+	  MMDAgent_Example/Motion/menu_rotation/menu_rotation.vmd (added),
+	  MMDAgent_Example/MMDAgent_Example.ojt (added),
+	  MMDAgent/Library_Julius/src/julius/libjcode/sample.c (added),
+	  MMDAgent/Library_Open_JTalk/src/text2mecab/text2mecab_rule_utf_8.h
+	  (added), MMDAgent/Library_Julius/src/jcontrol (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask
+	  (added), MMDAgent/Library_MMDFiles/src/include/PMDMaterial.h
+	  (added), MMDAgent_Example/Voice/mei_angry/tree-lpf.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/Makefile.mak
+	  (added), MMDAgent/Library_Julius/src/support/makeman.sh (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_sun4.c
+	  (added), MMDAgent/Library_Open_JTalk/Library_Open_JTalk.vcproj
+	  (added), MMDAgent/Plugin_VIManager (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolverVertexData_DX11.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.h
+	  (added), MMDAgent_Example/Expression/mei_sadness/COPYRIGHT.txt
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/njd_set_accent_phrase_rule_shift_jis.h
+	  (added), MMDAgent/Library_Julius/src/man/mkdfa.pl.1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolver_DX11SIMDAware.h
+	  (added), MMDAgent/Library_Open_JTalk/src/bin/Makefile.mak
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/tokenizer.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_lib.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/read_binhmm.c
+	  (added), MMDAgent_Example/Motion/mei_wait/mei_wait.vmd (added),
+	  MMDAgent/Library_Julius/src/libjulius/libjulius-config-dist.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_geometry.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/jfunc.c
+	  (added), MMDAgent/Library_Julius/src/Sample.jconf (added),
+	  MMDAgent/Library_Julius/src/libsent/src/wav2mfcc/wav2mfcc-pipe.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/param.cpp
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/zmean.c
+	  (added), MMDAgent/Library_Julius/src/plugin/result.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_geom_types.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon_rule_shift_jis.h
+	  (added), MMDAgent_Example/Voice/mei_normal/mgc.win1 (added),
+	  MMDAgent/Library_Julius/src/gramtools/gram2sapixml/Makefile.in
+	  (added), MMDAgent_Example/Voice/mei_normal/mgc.win2 (added),
+	  MMDAgent_Example/Voice/mei_normal/mgc.win3 (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/rdparam.c (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_var.c
+	  (added), MMDAgent_Example/Voice/mei_normal/gv-mgc.pdf (added),
+	  MMDAgent/Release/AppData (added),
+	  MMDAgent_Example/Voice/mei_normal/lpf.pdf (added),
+	  MMDAgent/Library_hts_engine_API/src/lib/HTS_audio.c (added),
+	  MMDAgent/Release/AppData/toon07.bmp (added),
+	  MMDAgent/Library_MMDFiles/src/include (added),
+	  MMDAgent/Library_Open_JTalk/src/README (added),
+	  MMDAgent/Library_PortAudio/lib (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/m_chkparam.c (added),
+	  MMDAgent/MMDAgent/Timer.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/nextword.c
+	  (added), MMDAgent/Library_Julius/src/mkbinhmm/00readme.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btAlignedAllocator.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/dsound_wrapper.c
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/nextword.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpuDefines.h
+	  (added), MMDAgent/Library_Julius/src/mkbinhmm/Makefile.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/dsound_wrapper.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btCollisionObject.h
+	  (added), MMDAgent/Library_Julius/src/adinrec/Makefile.in (added),
+	  MMDAgent/Library_Open_JTalk/src/njd/njd_node.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleBuffer.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/hmm_check.c
+	  (added), MMDAgent/Library_Open_JTalk/src/aclocal.m4 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/njd_set_pronunciation_rule_utf_8.h
+	  (added), MMDAgent_Example/Model/mei/neck.bmp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
+	  (added), MMDAgent/Library_hts_engine_API/include (added),
+	  MMDAgent_Example/Voice/mei_sad/tree-gv-lf0.inf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBodyHelpers.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/njd_set_accent_type.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
+	  (added), MMDAgent/Library_MMDFiles/src/lib/AlignedMotionState.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Vehicle
+	  (added), MMDAgent/Plugin_VIManager/Plugin_VIManager.cpp (added),
+	  MMDAgent/Library_Julius/src/adintool (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/njd_set_accent_type.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/nextword/wtoken.c
+	  (added), MMDAgent_Example/Accessory/menu/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Expression/mei_anger (added),
+	  MMDAgent/Library_MMDFiles/src/include/PMDRigidBody.h (added),
+	  MMDAgent/Library_Julius/src/julius (added),
+	  MMDAgent/MMDAgent/Render.h (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/adin-cut.c (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/instance.c (added),
+	  MMDAgent/Library_Julius/src/msvc/Release/LICENSE_portaudio.txt
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/m_options.c
+	  (added), MMDAgent/Library_Julius/src/jcontrol/server.c (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/ngram_decode.c (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/Makefile.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_win_wmme.c
+	  (added), MMDAgent/Library_Julius/src/ChangeLog (added),
+	  MMDAgent_Example/Voice/mei_sad/dur.pdf (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_file.c (added),
+	  MMDAgent/Library_MMDFiles/src/include/SystemTexture.h (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/viterbi.h (added),
+	  MMDAgent_Example/Voice/mei_normal/tree-lpf.inf (added),
+	  MMDAgent/Library_Julius/src/adinrec (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/realtime-1stpass.c
+	  (added), MMDAgent/Library_Julius/src/msvc/SampleApp/stdafx.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h
+	  (added), MMDAgent_Example/Voice/mei_normal (added),
+	  MMDAgent/Library_Julius/src/man/ja/nextword.1 (added),
+	  MMDAgent_Example/Model/mei/hair2.tga (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_tiedmix.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_unix_solaris.c
+	  (added), MMDAgent/Library_Julius/src/julius/libjcode/jlibconfig.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/dfa/dfa_util.c
+	  (added), MMDAgent/Library_Open_JTalk/src/text2mecab/Makefile.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuSampleTask/SpuSampleTask.h
+	  (added), MMDAgent/MMDAgent/MotionStocker.h (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp/SampleApp.cpp (added),
+	  MMDAgent_Example/Accessory/menu/README.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/util.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/floatInVec.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConvexHullShape.h
+	  (added), MMDAgent/Library_Julius/src/00readme-ja.txt (added),
+	  MMDAgent/Release/AppData/Open_JTalk/sys.dic (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btConvexPlaneCollisionAlgorithm.h
+	  (added), MMDAgent/Library_Julius/src/man (added),
+	  MMDAgent/Library_Julius/src/man/jclient.pl.1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_math.h
+	  (added), MMDAgent/Library_Julius/src/adinrec/00readme.txt
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDIK.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btRaycastCallback.h
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/HTS_label.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btParallelConstraintSolver.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btBox2dShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTetrahedronShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar/quat_aos.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/default.c
+	  (added), MMDAgent/Library_Julius/src/gramtools/nextword/rdterm.c
+	  (added), MMDAgent/Library_Julius/src/man/ja/accept_check.1
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SequentialThreadSupport.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpu3DGridBroadphaseSharedDefs.h
+	  (added), MMDAgent/Library_Julius/src/man/ja (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL/cl_MiniCL_Defs.h
+	  (added), MMDAgent/Release/AppData/toon08.bmp (added),
+	  MMDAgent_Example/Expression/mei_happiness (added),
+	  MMDAgent/Library_Julius/src/libsent/src/net/rdwt.c (added),
+	  MMDAgent/Library_Julius/src/julius/00readme-ja.txt (added),
+	  MMDAgent/Library_Julius/src/gramtools/gram2sapixml/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGenericPoolAllocator.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/mkdfa (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/njd2jpcommon_rule_shift_jis.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpu3DGridBroadphaseSharedCode.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/doc
+	  (added), MMDAgent_Example/Voice/mei_angry/lpf.pdf (added),
+	  MMDAgent/Library_GLee/include (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/njd_set_long_vowel.c
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/dictionary.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btContinuousConvexCollision.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btGeometryUtil.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/njd_set_long_vowel.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/wav2mfcc/para.c
+	  (added), MMDAgent/Library_Julius/src/support/cflags.i686-pc-linux
+	  (added), MMDAgent_Example/Voice/mei_sad/README.txt (added),
+	  MMDAgent/MMDAgent/Timer.cpp (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/njd_set_digit.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/phmm/mkwhmm.c
+	  (added), MMDAgent/Library_Julius/src/man/ja/mkbingram.1 (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_determinize/00readme.txt
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/njd_set_digit.h
+	  (added), MMDAgent_Example/Model/mei/ho.tga (added),
+	  MMDAgent/Library_Julius/src/gramtools/accept_check/accept_check.c
+	  (added), MMDAgent/Library_Open_JTalk/src/bin (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuContactManifoldCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/naist-jdic.csv
+	  (added),
+	  MMDAgent/Library_Julius/src/msvc/config/config-msvc-julius.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/put_htkdata_info.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btBoxBoxCollisionAlgorithm.h
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio/pa_jack.h
+	  (added), MMDAgent/Library_MMDFiles/src/include/PMDFace.h (added),
+	  MMDAgent_Example/Voice/mei_happy/lf0.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleIndexVertexMaterialArray.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolverBuffer_DX11.h
+	  (added), MMDAgent_Example/Expression/mei_bashfulness/README.txt
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/learner_tagger.cpp
+	  (added), MMDAgent_Example/Motion/mei_wait/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Model/mei/hair3.tga (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/m_info.c (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/Makefile.am
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h
+	  (added), MMDAgent/README.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/vec_aos.h
+	  (added), MMDAgent/Library_Julius/src/man/mkss.1 (added),
+	  MMDAgent/Library_MMDFiles/src/include/Define.h (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/utils.cpp (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/string_buffer.h
+	  (added), MMDAgent_Example/Voice/mei_bashful/tree-lpf.inf (added),
+	  MMDAgent_Example/Voice/mei_angry (added),
+	  MMDAgent_Example/Voice/mei_bashful/lf0.win1 (added),
+	  MMDAgent_Example/Voice/mei_bashful/lf0.win2 (added),
+	  MMDAgent_Example/Voice/mei_bashful/lf0.win3 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel (added),
+	  MMDAgent/Library_Julius/src/man/mkbinhmm.1 (added),
+	  MMDAgent/Library_Julius/src/msvc/config/config-msvc-libjulius.h
+	  (added), MMDAgent_Example/Voice/mei_normal/gv-lf0.pdf (added),
+	  MMDAgent/Library_Julius/src/julius/libjcode/detect.c (added),
+	  MMDAgent/Library_Julius/src/mkbinhmm/mkbinhmmlist.c (added),
+	  MMDAgent/Library_Julius/src/julius/charconv_win32.c (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/plugin.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/gmm.c (added),
+	  MMDAgent/Library_Julius/src/julius/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/LICENSE.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/readfile.c (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_read_bin.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btDbvtBroadphase.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h
+	  (added), MMDAgent/Library_Julius/src/jcontrol/install-sh (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConvexInternalShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/vectormath2bullet.h
+	  (added), MMDAgent/Release/AppData/toon09.bmp (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL/cl.h (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/gprune_heu.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar/floatInVec.h
+	  (added), MMDAgent/Library_Open_JTalk/src/config/config.sub
+	  (added), MMDAgent/Library_Julius/src/msvc/zlib/zlib.lib (added),
+	  MMDAgent/Library_Julius/src/msvc/Release/portaudio_x86.dll
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/btBulletDynamicsCommon.h
+	  (added), MMDAgent/Plugin_Open_JTalk/Open_JTalk_Thread.h (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/zc-e.c (added),
+	  MMDAgent_Example/Expression/mei_happiness/mei_happiness.vmd
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/config.h.in
+	  (added), MMDAgent/Library_Julius/src/jcontrol/config.guess
+	  (added), MMDAgent/Library_zlib/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/mkbinhmm/mkbinhmm.c (added),
+	  MMDAgent/Library_Julius/src/gramtools/accept_check/Makefile.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btEmptyCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/readline.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btList.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btCollisionConfiguration.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/dfa/mkcpair.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/OpenCL/btSoftBodySolverLinkData_OpenCL.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/pa/pablio.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConeShape.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/pa/pablio.h
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDConstraint.cpp
+	  (added), MMDAgent_Example/Voice/mei_happy/lpf.win1 (added),
+	  MMDAgent/Library_Julius/src/mkgshmm (added),
+	  MMDAgent/Library_Julius/src/jcontrol/japi_grammar.c (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/Makefile.mak (added),
+	  MMDAgent/Library_Julius/src/libsent/libsent-config-dist.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_unix_oss.c
+	  (added), MMDAgent/Library_Julius/src/mkgshmm/mkgshmm.in (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/strip.c (added),
+	  MMDAgent/Library_Julius/src/gramtools/accept_check/00readme.txt
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/Makefile.am
+	  (added), MMDAgent/Library_Julius/src/man/ja/julius.1 (added),
+	  MMDAgent/Library_Julius/src/msvc/portaudio/pa_linux_alsa.h
+	  (added), MMDAgent/Library_hts_engine_API/src/ChangeLog (added),
+	  MMDAgent_Example/Stage (added),
+	  MMDAgent/Library_Julius/src/man/Makefile.in (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/iconv_utils.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuSampleTaskProcess.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btVector3.h
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDBone.cpp (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/gram.tab.c
+	  (added), MMDAgent/Library_Julius/src/gramtools/mkdfa/00readme.txt
+	  (added), MMDAgent_Example/Voice/mei_happy/tree-dur.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/right-id.def
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuCollisionShapes.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/generate/rdterm.c
+	  (added), MMDAgent/Library_Open_JTalk/src/config (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/OpenCL
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btGjkEpa2.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/learner.cpp
+	  (added), MMDAgent/MMDAgent/utils.cpp (added),
+	  MMDAgent_Example/Voice/mei_happy/mgc.win1 (added),
+	  MMDAgent_Example/Motion/mei_wait (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/calc_mix.c (added),
+	  MMDAgent_Example/Voice/mei_happy/mgc.win2 (added),
+	  MMDAgent_Example/Voice/mei_happy/mgc.win3 (added),
+	  MMDAgent_Example/Motion (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/config.h.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_tri_collision.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuDoubleBuffer.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar/vec_aos.h
+	  (added), MMDAgent/Library_MMDFiles/src/include/PMDIK.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/Makefile.in
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/dictionary_generator.cpp
+	  (added), MMDAgent/Library_libpng/include/png.h (added),
+	  MMDAgent/Library_hts_engine_API/src/lib (added),
+	  MMDAgent/Library_Open_JTalk/src/config/compile (added),
+	  MMDAgent/Library_Julius/src/libjulius/00readme-jconf.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btClipPolygon.h
+	  (added), MMDAgent/Release/AppData/Julius/lang_m (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
+	  (added), MMDAgent/Plugin_Open_JTalk/Plugin_Open_JTalk.def
+	  (added), MMDAgent/Library_Julius/src/libsent/src/dfa/rddfa.c
+	  (added), MMDAgent_Example/Stage/building2/back.bmp (added),
+	  MMDAgent/Library_hts_engine_API/src/config/install-sh (added),
+	  MMDAgent/Library_Julius/src/libjulius/configure.in (added),
+	  MMDAgent/Library_Julius/src/libjulius/src (added),
+	  MMDAgent_Example/Motion/mei_self_introduction/README.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/vecidx_aos.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBodyInternals.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/pass1.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/paramtypes.c
+	  (added), MMDAgent_Example/Accessory/menu/menu_01.tga (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/Makefile.mak
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btDispatcher.h
+	  (added), MMDAgent_Example/Voice/mei_happy (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_options.c
+	  (added), MMDAgent/Library_Julius/src/mkgshmm/00readme-ja.txt
+	  (added), MMDAgent/Library_Julius/src/plugin/00readme.txt (added),
+	  MMDAgent_Example/Voice/mei_normal/pdr.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded
+	  (added), MMDAgent/Library_Julius/src/support/doxygen_erasefilter
+	  (added), MMDAgent/Release/AppData/Julius (added),
+	  MMDAgent/Library_Julius/src/man/mkbingram.1 (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/outprob_style.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/mecab-dict-index.cpp
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/njd_set_unvoiced_vowel.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/htk_param.h
+	  (added), MMDAgent/Library_Julius/src/mkbingram/Makefile.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Vehicle/btRaycastVehicle.h
+	  (added), MMDAgent_Example/Voice/mei_angry/gv-mgc.pdf (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/njd_set_unvoiced_vowel.h
+	  (added), MMDAgent_Example/Voice/mei_bashful/gv-mgc.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btQuadWord.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/guess_cdHMM.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/stddefs.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/ds48to16.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Vehicle/btVehicleRaycaster.h
+	  (added),
+	  MMDAgent/Library_Julius/src/msvc/portaudio/portaudio_x86.exp
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/jconf.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpu3DGridBroadphaseSharedTypes.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/acconfig.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/phmm/gms.c
+	  (added), MMDAgent/Library_hts_engine_API/src (added),
+	  MMDAgent/Library_Julius/src/support/cflags.i686-pc-cygwin
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/gram.l
+	  (added), MMDAgent_Example/Voice/mei_normal/tree-pdr.inf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btSliderConstraint.h
+	  (added), MMDAgent/Library_Julius/src/support (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btQuickprof.h
+	  (added), MMDAgent/Library_Bullet_Physics/include/BulletCollision
+	  (added), MMDAgent/Library_Julius/src/plugin/feature_postprocess.c
+	  (added), MMDAgent/Library_Julius/src/libsent/configure (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/CPU/btSoftBodySolverData.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftSoftCollisionAlgorithm.h
+	  (added), MMDAgent/Release/AppData/Open_JTalk/pos-id.def (added),
+	  MMDAgent/MMDAgent/MMDAgent.cpp (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/gram.y
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab2njd/Makefile.mak
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/text2mecab/text2mecab_rule_shift_jis.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuGatheringCollisionDispatcher.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/libmecab.cpp
+	  (added), MMDAgent/Library_Julius/src/mkgshmm/configure.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/jfunc.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/Makefile.in
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/Makefile.am
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/njd_set_long_vowel_rule_shift_jis.h
+	  (added), MMDAgent_Example/Stage/building2/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Voice/mei_sad/tree-dur.inf (added),
+	  MMDAgent/Library_hts_engine_API/src/config/compile (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/context_id.h (added),
+	  MMDAgent/Library_Open_JTalk/src/AUTHORS (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/OpenCL/btSoftBodySolverTriangleData_OpenCL.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_array.h
+	  (added), MMDAgent_Example/Voice/mei_angry/lf0.win1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolverVertexBuffer_DX11.h
+	  (added), MMDAgent_Example/Voice/mei_angry/lf0.win2 (added),
+	  MMDAgent/Library_Julius/src/jclient-perl/00readme.txt (added),
+	  MMDAgent_Example/Model/mei/blouse_arm.bmp (added),
+	  MMDAgent_Example/Voice/mei_angry/lf0.win3 (added),
+	  MMDAgent/MMDAgent/Screen.cpp (added),
+	  MMDAgent/Library_Open_JTalk/include (added),
+	  MMDAgent/Release/Plugins (added),
+	  MMDAgent/Library_Julius/src/msvc/config (added),
+	  MMDAgent_Example/Expression/mei_sadness (added),
+	  MMDAgent/Library_Julius/src/jcontrol/configure.in (added),
+	  MMDAgent/Library_Julius/src/msvc/zlib/zdll.lib (added),
+	  MMDAgent_Example/Model/mei/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Voice/mei_normal/README.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/useropt.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/gprune_none.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_memory.h
+	  (added), MMDAgent/Plugin_VIManager/VIManager.cpp (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/lbfgs.h (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon_rule_utf_8.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/dfa.c
+	  (added), MMDAgent_Example/Accessory/menu/menu_02.tga (added),
+	  MMDAgent/Library_Julius/src/man/jcontrol.1 (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/dictionary.h (added),
+	  MMDAgent/Library_MMDFiles/src/lib/PMDTextureLoader.cpp (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/dfa.h
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/HTS_vocoder.c
+	  (added), MMDAgent/Library_Julius/src/msvc/SampleApp/Resource.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/Makefile.in
+	  (added), MMDAgent/Library_Julius/src/mkgshmm/00readme.txt
+	  (added), MMDAgent/Release/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/plugin/fvin.c (added),
+	  MMDAgent/Library_Julius/src/man/adintool.1 (added),
+	  MMDAgent/Library_Julius/src/libsent/src/dfa/dfa_malloc.c (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/hmm_calc.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/njd_set_pronunciation_rule_shift_jis.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics/btRigidBody.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/iconv_utils.cpp
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/extern.h
+	  (added), MMDAgent/Library_Julius/src/mkbingram/mkbingram.c
+	  (added), MMDAgent/MMDAgent/TextRenderer.cpp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/addlog.c (added),
+	  MMDAgent/Library_hts_engine_API/src/configure.ac (added),
+	  MMDAgent/Library_Julius/src/jcontrol/00readme.txt (added),
+	  MMDAgent/Library_Open_JTalk/src/config/depcomp (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/plugin.c (added),
+	  MMDAgent/Library_Bullet_Physics/include (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/feature_index.cpp
+	  (added), MMDAgent/Library_Bullet_Physics/include/Bullet-C-Api.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_clip_polygon.h
+	  (added), MMDAgent/Library_Julius/src/mkbingram/00readme.txt
+	  (added), MMDAgent/Library_hts_engine_API/src/include (added),
+	  MMDAgent/Library_MMDFiles/src/include/VMDFile.h (added),
+	  MMDAgent/MMDAgent/Plugin.cpp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_unix.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/Makefile.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_unix.h
+	  (added), MMDAgent/Plugin_Julius/Plugin_Julius.vcproj (added),
+	  MMDAgent_Example/Voice/mei_happy/lpf.pdf (added),
+	  MMDAgent/Library_Julius/src/msvc/Debug (added),
+	  MMDAgent_Example/Model/mei (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_sndfile.c
+	  (added), MMDAgent_Example/Voice/mei_normal/gv-switch.inf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h
+	  (added), MMDAgent/Library_Julius/src/msvc/SampleApp/SampleApp.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/read_binhmmlist.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolver_DX11.h
+	  (added), MMDAgent_Example/Voice/mei_bashful/dur.pdf (added),
+	  MMDAgent/Library_Open_JTalk/src/config/config.guess (added),
+	  MMDAgent/Library_Julius/src/plugin/Makefile (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/useropt.c (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/darts.h (added),
+	  MMDAgent/Plugin_Julius/Plugin_Julius.cpp (added),
+	  MMDAgent/Release/AppData/Julius/phone_m/README.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/src/dfa (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/misc.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_data.c
+	  (added), MMDAgent/Library_PortAudio/include (added),
+	  MMDAgent_Example/Expression/mei_sadness/README.txt (added),
+	  MMDAgent/Library_Julius/src/julius/visual.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/nextword/common.h
+	  (added), MMDAgent/Library_Julius/src/libjulius (added),
+	  MMDAgent/MMDAgent/PMDObject.h (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic (added),
+	  MMDAgent_Example/Voice/mei_bashful/lpf.win1 (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/Makefile.am (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/paramselect.c
+	  (added),
+	  MMDAgent/Library_Julius/src/msvc/libjulius/libjulius.vcproj
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+	  (added), MMDAgent/Library_Julius/src/support/modrev.sh (added),
+	  MMDAgent/Library_Julius/src/julius/libjcode/libjcode.c (added),
+	  MMDAgent_Example/Expression/mei_bashfulness (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp/Julius.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btManifoldResult.h
+	  (added), MMDAgent/Library_hts_engine_API/src/README (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/Makefile.mak
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/yomi2voca/Makefile.in
+	  (added), MMDAgent/Library_Open_JTalk/src/ChangeLog (added),
+	  MMDAgent/MMDAgent/main.ico (added),
+	  MMDAgent_Example/Accessory/menu/menu_03.tga (added),
+	  MMDAgent_Example/Voice/mei_angry/gv-lf0.pdf (added),
+	  MMDAgent/Library_Open_JTalk/src/text2mecab (added),
+	  MMDAgent/Library_hts_engine_API/src/Makefile.am (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/OpenCL/btSoftBodySolverBuffer_OpenCL.h
+	  (added), MMDAgent_Example/Voice/mei_bashful/gv-lf0.pdf (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/writer.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_minimize/00readme.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_read_arpa.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/nbest_generator.h
+	  (added), MMDAgent/Release/AppData/Open_JTalk/COPYRIGHT.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSparseSDF.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics/btContinuousDynamicsWorld.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btHingeConstraint.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/rewrite.def
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_minimize/Makefile.in
+	  (added), MMDAgent/Library_Julius/src/libsent/src/voca/voca_util.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/Makefile.am
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/write_binhmm.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btRandom.h
+	  (added), MMDAgent/Plugin_VIManager/Plugin_VIManager.vcproj
+	  (added), MMDAgent_Example/Voice/mei_bashful/mgc.win1 (added),
+	  MMDAgent_Example/Voice/mei_bashful/mgc.win2 (added),
+	  MMDAgent/Library_Julius/src/julius/libjcode/jlib.h (added),
+	  MMDAgent_Example/Voice/mei_bashful/mgc.win3 (added),
+	  MMDAgent/Library_Julius/src/gramtools/configure.in (added),
+	  MMDAgent/Library_hts_engine_API/src/config/depcomp (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/viterbi.cpp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/wav2mfcc/wav2mfcc-buffer.c
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/HTS_misc.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_radixsort.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/graphout.c
+	  (added), MMDAgent_Example/Model/mei/blouse.bmp (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon_node.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleInfoMap.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/OpenCL/btSoftBodySolverVertexData_OpenCL.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/njd_set_digit_rule_utf_8.h
+	  (added), MMDAgent_Example/Voice/mei_sad/mgc.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleMesh.h
+	  (added), MMDAgent/MMDAgent/main.cpp (added),
+	  MMDAgent/Library_Julius/src/libjulius/libjulius-config.in
+	  (added), MMDAgent/Library_hts_engine_API/src/NEWS (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/hmm_lookup.c
+	  (added), MMDAgent/Library_Julius/src/julius/main.c (added),
+	  MMDAgent/Library_Julius/src/libjulius/configure (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btDefaultMotionState.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/dfa/dfa_lookup.c
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/m_jconf.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btMaterial.h
+	  (added), MMDAgent_Example/MMDAgent_Example.fst (added),
+	  MMDAgent/Library_PortAudio/include/pa_asio.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btUniformScalingShape.h
+	  (added), MMDAgent/Library_MMDFiles/src/include/MotionManager.h
+	  (added), MMDAgent/Library_libpng/lib/libpng.lib (added),
+	  MMDAgent_Example/Voice/mei_normal/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btHinge2Constraint.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/wav2mfcc/ss.c
+	  (added), MMDAgent/Library_Julius/src/man/ja/jclient.pl.1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConvexPointCloudShape.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/recogmain.c
+	  (added), MMDAgent/Library_hts_engine_API/lib (added),
+	  MMDAgent/Library_Julius/src/libsent/src/net/server-client.c
+	  (added), MMDAgent/Library_Julius/src/gramtools/00readme.txt
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/wav2mfcc.c
+	  (added), MMDAgent/Library_Julius/src/adintool/00readme.txt
+	  (added), MMDAgent_Example/Expression/mei_anger/mei_anger.vmd
+	  (added), MMDAgent/Library_Julius/src/msvc/SampleApp/Julius.cpp
+	  (added), MMDAgent/Library_Julius/src/jclient-perl (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuLibspe2Support.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/Makefile.mak
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/lex.yy.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/config.h.in
+	  (added), MMDAgent/Library_Julius/src/msvc/julius/julius.vcproj
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact
+	  (added), MMDAgent/MMDAgent.sln (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/init_ngram.c
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/tagger.cpp
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/Makefile.in
+	  (added), MMDAgent/Library_Julius/include/sent (added),
+	  MMDAgent/Library_hts_engine_API/src/lib/HTS_gstream.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btCompoundCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11
+	  (added),
+	  MMDAgent/Release/AppData/Julius/phone_m/clustered.mmf.16mix.all.julius.gz
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btMotionState.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Character
+	  (added), MMDAgent/Plugin_VIManager/Plugin_VIManager.def (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL (added),
+	  MMDAgent_Example/Expression/mei_bashfulness/mei_bashfulness.vmd
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btConvexConcaveCollisionAlgorithm.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/mmap.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/CPU/btSoftBodySolver_CPU.h
+	  (added), MMDAgent/Library_Julius/src/julius-simple (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btConstraintSolver.h
+	  (added),
+	  MMDAgent_Example/Motion/mei_self_introduction/COPYRIGHT.txt
+	  (added), MMDAgent_Example/Accessory/menu/menu_04.tga (added),
+	  MMDAgent_Example/Voice/mei_angry/tree-dur.inf (added),
+	  MMDAgent/Library_libpng/include/pngpriv.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL/MiniCLTask/MiniCLTask.h
+	  (added), MMDAgent/Library_zlib/include/zlib.h (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/gprune_safe.c
+	  (added), MMDAgent_Example/Model/mei/face.bmp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btConvexCast.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/char_property.h
+	  (added), MMDAgent/Library_Open_JTalk/src/jpcommon/Makefile.mak
+	  (added), MMDAgent_Example/Expression/mei_anger/README.txt
+	  (added), MMDAgent/MMDAgent/MMDAgent_command.h (added),
+	  MMDAgent/Library_hts_engine_API/src/AUTHORS (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/njd2jpcommon.c
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/gramlist.c
+	  (added), MMDAgent/Library_Julius/src/man/ja/generate.1 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/njd2jpcommon.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
+	  (added), MMDAgent/Library_Julius/src/plugin/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btAlignedObjectArray.h
+	  (added), MMDAgent/Library_Julius/src/msvc/zlib/zlib1.dll (added),
+	  MMDAgent_Example/Voice/mei_normal/tree-gv-mgc.inf (added),
+	  MMDAgent/Library_Julius/src/msvc/JuliusLib.sln (added),
+	  MMDAgent/Library_Julius/src/mkbinhmm/00readme-ja.txt (added),
+	  MMDAgent/MMDAgent/MMDAgent_dropfile.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL/MiniCLTaskScheduler.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+	  (added), MMDAgent/Library_libpng/include/pngconf.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGeometryOperations.h
+	  (added), MMDAgent_Example/Voice/mei_normal/dur.pdf (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/common.h (added),
+	  MMDAgent/Library_hts_engine_API/src/lib/Makefile.am (added),
+	  MMDAgent/Library_Open_JTalk/src/INSTALL (added),
+	  MMDAgent_Example/Expression/mei_bashfulness/COPYRIGHT.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/global.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/njd_set_digit_rule_euc_jp.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/context_id.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/Win32ThreadSupport.h
+	  (added), MMDAgent_Example/Voice/mei_happy/gv-switch.inf (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/00readme.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/calc_tied_mix.c
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/ucstable.h
+	  (added), MMDAgent/MMDAgent/UserOption.h (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/search_bestfirst_v2.c
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDFace.cpp (added),
+	  MMDAgent/Library_Julius/src/support/doxygen.conf.en (added),
+	  MMDAgent/Library_Julius/src/libsent/src/voca/voca_malloc.c
+	  (added), MMDAgent/Library_GLee/lib (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btQuantizedBvh.h
+	  (added),
+	  MMDAgent/Library_Julius/src/msvc/portaudio/portaudio_x86.dll.intermediate.manifest
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btCylinderShape.h
+	  (added), MMDAgent/Plugin_Open_JTalk/Open_JTalk.cpp (added),
+	  MMDAgent/Library_PortAudio/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/support/cflags.i686-pc-mingw32
+	  (added), MMDAgent/Library_Julius/src/jclient-perl/jclient.pl
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/phmm/vsegment.c
+	  (added), MMDAgent_Example/Voice/mei_angry/lpf.win1 (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/outprob.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btBox2dBox2dCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuContactResult.h
+	  (added), MMDAgent/Library_Julius/src/gramtools (added),
+	  MMDAgent_Example/Voice/mei_bashful (added),
+	  MMDAgent/Library_Julius (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/htk_hmm.h
+	  (added), MMDAgent/Library_Julius/src/msvc/00README-ja.txt
+	  (added), MMDAgent/Library_Julius/src/libsent/include/sent/dfa.h
+	  (added), MMDAgent/Library_Julius/src/mkss (added),
+	  MMDAgent/Library_Julius/src/libsent/src/wav2mfcc/mfcc-core.c
+	  (added), MMDAgent_Example/Voice/mei_normal/tree-dur.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/gprune_common.c
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/Makefile.am
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGImpactMassUtil.h
+	  (added), MMDAgent/Library_Julius/src/libsent/include (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/wchmm.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_box_collision.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_o2.c
+	  (added), MMDAgent/Library_Julius/src/gramtools/mkdfa/mkdfa.pl.in
+	  (added), MMDAgent/Library_Julius/src/man/gram2sapixml.pl.1
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/search.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btBoxBoxDetector.h
+	  (added), MMDAgent/Library_Julius/src/man/ja/generate-ngram.1
+	  (added), MMDAgent_Example/Motion/mei_wait/README.txt (added),
+	  MMDAgent_Example/Accessory/menu/menu_05.tga (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h
+	  (added), MMDAgent_Example/Voice/mei_angry/README.txt (added),
+	  MMDAgent/Library_PortAudio/include/pa_win_wmme.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btTransformUtil.h
+	  (added), MMDAgent_Example/Voice/mei_bashful/README.txt (added),
+	  MMDAgent/Library_hts_engine_API/src/Makefile.in (added),
+	  MMDAgent_Example/Voice/mei_sad/lf0.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/SphereTriangleDetector.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/recog.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_sol2.c
+	  (added), MMDAgent/Library_MMDFiles/src (added),
+	  MMDAgent_Example/Voice/mei_angry/mgc.win1 (added),
+	  MMDAgent_Example/Voice/mei_angry/mgc.win2 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btInternalEdgeUtility.h
+	  (added), MMDAgent_Example/Voice/mei_angry/mgc.win3 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btConvexPenetrationDepthSolver.h
+	  (added), MMDAgent/Plugin_Julius/Julius_Thread.h (added),
+	  MMDAgent_Example/Voice/mei_happy/gv-mgc.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar/boolInVec.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/Makefile.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/julius.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/mecab.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio/pa_win_ds.h
+	  (added), MMDAgent/Library_Julius/src/plugin/generic_callback.c
+	  (added), MMDAgent/MMDAgent/LipSync.cpp (added),
+	  MMDAgent/Library_Julius/src/msvc/libsent/libsent.vcproj (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/njd2jpcommon_rule_euc_jp.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/lpfcoef_3to4.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/yomi2voca (added),
+	  MMDAgent/Library_hts_engine_API/src/bin/Makefile.am (added),
+	  MMDAgent_Example/Voice/mei_happy/tree-mgc.inf (added),
+	  MMDAgent/Library_MMDFiles/src/include/VMD.h (added),
+	  MMDAgent/Library_Bullet_Physics (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/Makefile.am
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/speech.h
+	  (added), MMDAgent/Library_Julius/src/libsent/include/sent/mfcc.h
+	  (added), MMDAgent/Library_Julius/src/julius/charconv_libjcode.c
+	  (added), MMDAgent_Example/Voice/mei_happy/COPYRIGHT.txt (added),
+	  MMDAgent_Example/Voice/mei_angry/tree-gv-mgc.inf (added),
+	  MMDAgent/Library_Julius/src/plugin/Makefile.darwin (added),
+	  MMDAgent/Library_Julius/src/man/ja/mkdfa.pl.1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConvex2dShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/btBulletCollisionCommon.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/tokenizer.cpp
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio/pa_win_wmme.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuConvexPenetrationDepthSolver.h
+	  (added), MMDAgent_Example/Voice/mei_angry/dur.pdf (added),
+	  MMDAgent/Library_hts_engine_API/src/config (added),
+	  MMDAgent_Example/Accessory/menu/menu.pmd (added),
+	  MMDAgent/Library_Julius/src/msvc/libsent (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btStridingMeshInterface.h
+	  (added), MMDAgent/Library_libpng (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/htk_defs.h
+	  (added), MMDAgent/Library_Julius/src/gramtools/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics/btActionInterface.h
+	  (added), MMDAgent/Library_MMDFiles/src/lib/AlignedMotionState.h
+	  (added), MMDAgent/Release/AppData/Open_JTalk/left-id.def (added),
+	  MMDAgent/Library_MMDFiles/src/lib/PMDModel_render.cpp (added),
+	  MMDAgent/Library_MMDFiles/src/lib/MotionManager.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/COPYING
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btSimulationIslandManager.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_contact.h
+	  (added), MMDAgent/Library_Julius/src/man/adinrec.1 (added),
+	  MMDAgent/Library_Julius/src/configure (added),
+	  MMDAgent/Library_Julius/src/msvc/Debug/portaudio_x86.dll (added),
+	  MMDAgent/Library_Julius/src/man/julius.1 (added),
+	  MMDAgent/Library_Julius/src/libjulius/include (added),
+	  MMDAgent_Example (added), MMDAgent/Library_Open_JTalk/src/njd
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Character/btKinematicCharacterController.h
+	  (added), MMDAgent/Library_MMDFiles/src/include/PMDTextureLoader.h
+	  (added), MMDAgent/Library_Julius/src/libsent/configure.in
+	  (added), MMDAgent/Library_Open_JTalk/src/text2mecab/text2mecab.c
+	  (added), MMDAgent/Library_Julius/src/support/build-all.sh
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h
+	  (added), MMDAgent/Library_Julius/include (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btOptimizedBvh.h
+	  (added), MMDAgent/Library_Open_JTalk/src/text2mecab/text2mecab.h
+	  (added), MMDAgent/Library_Julius/src/julius/output_module.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btBoxShape.h
+	  (added), MMDAgent/Release/AppData/Julius/lang_m/COPYRIGHT.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/msvc/portaudio/portaudio_x86.dll
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/trellis.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btCapsuleShape.h
+	  (added), MMDAgent/Library_Julius/src/support/doxygen.conf.ja
+	  (added), MMDAgent/Library_Open_JTalk/src/njd/Makefile.mak
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDMaterial.cpp
+	  (added), MMDAgent/Library_Julius/src/libsent/src/adin/adin_na.c
+	  (added), MMDAgent/Library_Open_JTalk/src/njd/njd_rule_shift_jis.h
+	  (added), MMDAgent/Library_MMDFiles/include (added),
+	  MMDAgent/Library_hts_engine_API/src/lib/HTS_pstream.c (added),
+	  MMDAgent/Library_Julius/src/libsent/src/voca/voca_lookup.c
+	  (added), MMDAgent/Library_Julius/src/julius/module.c (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz/wrwav.c (added),
+	  MMDAgent/MMDAgent/LogText.h (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp/targetver.h (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/00readme-ja.txt
+	  (added), MMDAgent/Plugin_Julius/Julius_Thread.cpp (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/gen_next.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_compact_context.c
+	  (added),
+	  MMDAgent/Library_Julius/src/support/cflags.i686-pc-linux-gnu
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PTree.cpp (added),
+	  MMDAgent_Example/Expression/mei_happiness/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/gen_next.h
+	  (added), MMDAgent/Library_Julius/src/Release.txt (added),
+	  MMDAgent/Library_MMDFiles/src/include/PMDTexture.h (added),
+	  MMDAgent/Library_Julius/src/libsent (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btUniversalConstraint.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef_trans.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/util/confout.c
+	  (added), MMDAgent/MMDAgent/MMDAgent.vcproj (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/gzfile.c (added),
+	  MMDAgent/Release/README.txt (added),
+	  MMDAgent/Library_PortAudio/include/pa_jack.h (added),
+	  MMDAgent_Example/Accessory/menu/menu_06.tga (added),
+	  MMDAgent/Library_Julius/src/msvc/zlib (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation (added),
+	  MMDAgent/Library_Julius/src/support/config.sub (added),
+	  MMDAgent_Example/Voice/mei_bashful/tree-dur.inf (added),
+	  MMDAgent/Library_Julius/src/gramtools/generate/00readme.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btThreadSupportInterface.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/beam.c
+	  (added), MMDAgent_Example/Voice/mei_normal/tree-gv-lf0.inf
+	  (added), MMDAgent/Library_Julius/src/julius/app.h (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/Makefile.am (added),
+	  MMDAgent/Library_MMDFiles/src/lib/MotionController.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuPreferredPenetrationDirections.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/CPU
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/njd_set_pronunciation.c
+	  (added), MMDAgent/Release/AppData/Julius/phone_m/COPYRIGHT.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btHashMap.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/hmminfo/cdhmm.c
+	  (added), MMDAgent/Library_hts_engine_API/src/include/HTS_engine.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_pronunciation/njd_set_pronunciation.h
+	  (added), MMDAgent/Library_Open_JTalk/src/njd/Makefile.am (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp/stdafx.cpp (added),
+	  MMDAgent/Library_Julius/src/man/generate-ngram.1 (added),
+	  MMDAgent_Example/Stage/building2 (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/njd_set_unvoiced_vowel_rule_euc_jp.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btMultiSphereShape.h
+	  (added), MMDAgent/Library_Julius/src/msvc/libjulius (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/nbest_generator.cpp
+	  (added), MMDAgent/Library_Julius/src/gramtools/gram2sapixml
+	  (added), MMDAgent/Library_Julius/src/man/mkgshmm.1 (added),
+	  MMDAgent/Library_MMDFiles/src/include/PMDFile.h (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/njd_set_long_vowel_rule_euc_jp.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/voca (added),
+	  MMDAgent_Example/Model/mei/leg.bmp (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btPoolAllocator.h
+	  (added), MMDAgent/Library_MMDFiles/Library_MMDFiles.vcproj
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/Makefile.in
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/main.c
+	  (added), MMDAgent/Library_libpng/include (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/adin.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/unk.def
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_trace.c
+	  (added), MMDAgent/Library_Julius/src/gramtools/accept_check
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/util/ptree.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/Makefile.mak
+	  (added), MMDAgent/Library_Julius/src/support/config.guess
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_trace.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btCollisionWorld.h
+	  (added), MMDAgent_Example/Voice/mei_sad/tree-mgc.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/doc/mkfa.doc
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm/gms_gprune.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/define.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/feature_index.h
+	  (added), MMDAgent/Library_Open_JTalk/src/njd_set_digit (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/callback.h
+	  (added), MMDAgent/Library_Julius/src/libsent/Makefile.in (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/boolInVec.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGImpactQuantizedBvh.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_linux_oss.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolverTriangleData_DX11.h
+	  (added), MMDAgent/Library_Julius/src/adinrec/adinrec.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btSimpleBroadphase.h
+	  (added), MMDAgent/Plugin_VIManager/VIManager.h (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius (added),
+	  MMDAgent/Library_Julius/src/libsent/src/voca/voca_load_htkdict.c
+	  (added), MMDAgent/Library_MMDFiles/src/lib/BulletPhysics.cpp
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_malloc.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/hmminfo/cdset.c
+	  (added), MMDAgent/Library_hts_engine_API/src/INSTALL (added),
+	  MMDAgent/Library_Julius/src/man/ja/adinrec.1 (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_determinize/dfa_determinize.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/HeapManager.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes
+	  (added), MMDAgent/Library_Julius/src/libsent/src/dfa/mkterminfo.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/voca/voca_load_wordlist.c
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/nextword/get_next.c
+	  (added), MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h
+	  (added), MMDAgent/Library_Julius/src/man/nextword.1 (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/write_binhmmlist.c
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/common.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics/btDynamicsWorld.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/Makefile.in
+	  (added), MMDAgent/Library_Bullet_Physics/include/MiniCL/cl_gl.h
+	  (added), MMDAgent/Library_Open_JTalk/src/bin/Makefile.am (added),
+	  MMDAgent_Example/Model/mei/toon10.bmp (added),
+	  MMDAgent/Release/AppData/Julius/lang_m/web.60k.htkdic (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath (added),
+	  MMDAgent/Library_hts_engine_API/src/config/config.guess (added),
+	  MMDAgent/MMDAgent/Render.cpp (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/mecab.h (added),
+	  MMDAgent_Example/Accessory/menu/menu_07.tga (added),
+	  MMDAgent_Example/Voice/mei_happy/gv-lf0.pdf (added),
+	  MMDAgent/Library_Julius/src/msvc/config/config-msvc-libsent.h
+	  (added), MMDAgent/Library_Julius/src/adintool/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_minimize/dfa_minimize.c
+	  (added), MMDAgent/Library_zlib/include (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btCollisionMargin.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/eval.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuFakeDma.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/anlz/wrsamp.c
+	  (added), MMDAgent/Library_Julius/src/mkss/00readme.txt (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel (added),
+	  MMDAgent/Library_Open_JTalk/src/njd2jpcommon/njd2jpcommon_rule_utf_8.h
+	  (added), MMDAgent/Release/AppData/Open_JTalk/right-id.def
+	  (added), MMDAgent_Example/Voice/mei_happy/tree-lf0.inf (added),
+	  MMDAgent/Library_GLee/include/GLee.h (added),
+	  MMDAgent/Library_Julius/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_determinize (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/vmInclude.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/njd_set_accent_type_rule_shift_jis.h
+	  (added), MMDAgent/Library_MMDFiles/lib (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/njd_set_accent_type_rule_utf_8.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/accept_check/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Julius/src/julius/libjcode/Doc/rfc1468.txt
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/njd_set_digit_rule_shift_jis.h
+	  (added), MMDAgent_Example/Voice/mei_angry/tree-gv-lf0.inf
+	  (added), MMDAgent/Library_Julius/src/adinrec/00readme-ja.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuSampleTask
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/char_property.cpp
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConvexShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btMatrix3x3.h
+	  (added), MMDAgent_Example/Expression/mei_happiness/README.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_type/njd_set_accent_type_rule_euc_jp.h
+	  (added), MMDAgent_Example/Voice/mei_bashful/mgc.pdf (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_sp.c
+	  (added), MMDAgent/Library_hts_engine_API/src/bin/Makefile.in
+	  (added), MMDAgent/MMDAgent/utils.h (added),
+	  MMDAgent/Library_Julius/src/plugin (added),
+	  MMDAgent/MMDAgent/PMDObject.cpp (added),
+	  MMDAgent/Library_Open_JTalk/src/config/install-sh (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btQuaternion.h
+	  (added), MMDAgent/Library_Open_JTalk/src/Makefile.mak (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_accent_phrase/Makefile.in
+	  (added), MMDAgent/Library_Julius/src/mkbinhmm (added),
+	  MMDAgent/Library_Julius/src/man/dfa_determinize.1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftRigidCollisionAlgorithm.h
+	  (added), MMDAgent/Library_Julius/src/man/ja/mkbinhmm.1 (added),
+	  MMDAgent/Library_Julius/src/man/ja/mkgshmm.1 (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/ngram2.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab2njd/Makefile.am
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_hash_table.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/net (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btScalar.h
+	  (added), MMDAgent/Library_Open_JTalk/src/njd_set_accent_type
+	  (added), MMDAgent/Library_hts_engine_API/src/configure (added),
+	  MMDAgent_Example/Model (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/juliuslib.h
+	  (added), MMDAgent/Library_MMDFiles/src/include/BulletPhysics.h
+	  (added), MMDAgent_Example/Voice/mei_angry/gv-switch.inf (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/mkfa-1.44-flex/mkfa.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/src/learner_node.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/njd_set_long_vowel_rule_utf_8.h
+	  (added), MMDAgent/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/gramtools/gram2sapixml/gram2sapixml.pl.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/doxygen.conf.ver.in
+	  (added), MMDAgent/Library_PortAudio/include/pa_mac_core.h
+	  (added), MMDAgent/Library_Julius/Library_Julius.vcproj (added),
+	  MMDAgent/Library_Julius/src/libsent/src/voca/init_voca.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/ConstraintSolver/btSolverBody.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_determinize/Makefile.in
+	  (added), MMDAgent/Library_Julius/src/julius/libjcode/README
+	  (added), MMDAgent/Library_Open_JTalk/src/njd/njd_rule_utf_8.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btTransform.h
+	  (added), MMDAgent/MMDAgent/MotionStocker.cpp (added),
+	  MMDAgent/Library_Julius/src/msvc/Release (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_esd.c (added),
+	  MMDAgent/Library_Julius/src/gramtools/mkdfa/00readme-ja.txt
+	  (added), MMDAgent/Library_libpng/COPYRIGHT.txt (added),
+	  MMDAgent/Release/AppData/toon01.bmp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/chkhmmlist.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_lookup.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/btGpu3DGridBroadphase.h
+	  (added),
+	  MMDAgent/Library_Julius/src/msvc/portaudio/pa_win_waveformat.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btDbvt.h
+	  (added), MMDAgent_Example/Motion/mei_self_introduction (added),
+	  MMDAgent/Library_Julius/src/julius-simple/Makefile (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL/MiniCLTask
+	  (added), MMDAgent_Example/Voice/mei_sad/lpf.pdf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btSphereBoxCollisionAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/sse/mat_aos.h
+	  (added), MMDAgent/Plugin_Julius/Plugin_Julius.def (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/beam.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/Makefile.am
+	  (added), MMDAgent/Library_Julius/src/julius/output_file.c
+	  (added), MMDAgent/Library_hts_engine_API/src/lib/Makefile.mak
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio/pa_mac_core.h
+	  (added), MMDAgent/Library_Open_JTalk/src/njd2jpcommon/Makefile.in
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/portaudio.h
+	  (added), MMDAgent/Library_Julius/src/julius/output_stdout.c
+	  (added), MMDAgent/Release/AppData/toon10.bmp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/mybmalloc.c (added),
+	  MMDAgent/Library_Open_JTalk/src/njd/Makefile.in (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btGhostObject.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/spsegment.c
+	  (added), MMDAgent/Library_PortAudio/include/pa_win_ds.h (added),
+	  MMDAgent/Library_Open_JTalk/src/njd/njd.c (added),
+	  MMDAgent_Example/Voice/mei_sad/tree-lf0.inf (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
+	  (added), MMDAgent/Library_Open_JTalk/src/njd/njd.h (added),
+	  MMDAgent_Example/Voice/mei_sad/lf0.win1 (added),
+	  MMDAgent_Example/Voice/mei_sad/lf0.win2 (added),
+	  MMDAgent/Library_MMDFiles/src/lib (added),
+	  MMDAgent/Library_Julius/src/jclient-perl/00readme-ja.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram (added),
+	  MMDAgent/Library_Julius/src/libsent/src/anlz (added),
+	  MMDAgent_Example/Voice/mei_sad/lf0.win3 (added),
+	  MMDAgent/Library_Julius/src/generate-ngram (added),
+	  MMDAgent/Library_zlib/lib (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/matrix.def
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/gim_linear_math.h
+	  (added), MMDAgent/Library_Julius/src/man/mkbinhmmlist.1 (added),
+	  MMDAgent/Library_Julius/src/generate-ngram/generate-ngram.c
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab-naist-jdic/char.def
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_portaudio.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_host.h
+	  (added), MMDAgent/Library_Julius/src/jcontrol/config.sub (added),
+	  MMDAgent/Library_Julius/src/gramtools/gram2sapixml/00readme.txt
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/multi-gram.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/init_phmm.c
+	  (added), MMDAgent_Example/Model/mei/ude.bmp (added),
+	  MMDAgent_Example/Voice/mei_angry/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/acconfig.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Dynamics
+	  (added),
+	  MMDAgent/Library_Julius/src/libjulius/include/julius/wchmm.h
+	  (added), MMDAgent_Example/Motion/mei_greeting/README.txt (added),
+	  MMDAgent_Example/Model/mei/skirt.tga (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/thread.h (added),
+	  MMDAgent_Example/Voice/mei_happy/dur.pdf (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/machines.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleCallback.h
+	  (added), MMDAgent/Library_Julius/src/msvc/zlib/zconf.h (added),
+	  MMDAgent/Library_Bullet_Physics/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuCollisionObjectWrapper.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/accept_check/rdterm.c
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_write_bin.c
+	  (added), MMDAgent/Library_MMDFiles/src/include/PMDBone.h (added),
+	  MMDAgent_Example/Voice/mei_angry/tree-mgc.inf (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/check_hmmtype.c
+	  (added), MMDAgent/Library_Julius/src/Release-ja.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/src/phmm (added),
+	  MMDAgent_Example/Model/mei/mei.pmd (added),
+	  MMDAgent/Library_Julius/src/libsent/include/sent/vocabulary.h
+	  (added), MMDAgent/Library_Julius/src/jcontrol/japi_process.c
+	  (added), MMDAgent/MMDAgent/Audio.h (added),
+	  MMDAgent/Library_Open_JTalk/src/text2mecab/Makefile.mak (added),
+	  MMDAgent/Library_Julius/src/msvc/portaudio/portaudio_x86.lib
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab2njd (added),
+	  MMDAgent/Release/AppData/toon02.bmp (added),
+	  MMDAgent/Library_Open_JTalk/src/bin/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/dfa_decode.c (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/mempool.h (added),
+	  MMDAgent/MMDAgent/Screen.h (added),
+	  MMDAgent/Library_hts_engine_API/src/aclocal.m4 (added),
+	  MMDAgent_Example/Voice/mei_happy/README.txt (added),
+	  MMDAgent/Library_Open_JTalk/src/jpcommon/jpcommon_rule_euc_jp.h
+	  (added), MMDAgent/Library_Julius/src/libjulius/src/wchmm_check.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/hmminfo (added),
+	  MMDAgent/Library_PortAudio/lib/PortAudio.lib (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btConcaveShape.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/njd_set_unvoiced_vowel_rule_utf_8.h
+	  (added), MMDAgent/Library_Open_JTalk/src/config/missing (added),
+	  MMDAgent_Example/Voice/mei_normal/mgc.pdf (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/Makefile.mak (added),
+	  MMDAgent/MMDAgent/UserOption.cpp (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/pa/pa_dsound.c
+	  (added), MMDAgent/MMDAgent/Stage.h (added),
+	  MMDAgent/Library_MMDFiles/src/include/PMDModel.h (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar/vectormath_aos.h
+	  (added), MMDAgent/Library_hts_engine_API/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/libsent/src/dfa/cpair.c (added),
+	  MMDAgent_Example/Voice/mei_bashful/lf0.pdf (added),
+	  MMDAgent/Library_Julius/src/libsent/src/util/mymalloc.c (added),
+	  MMDAgent/Library_Bullet_Physics/include/vectormath/scalar/mat_aos.h
+	  (added),
+	  MMDAgent/Library_Julius/src/gramtools/dfa_minimize/00readme-ja.txt
+	  (added), MMDAgent/Library_MMDFiles/src/include/MotionController.h
+	  (added),
+	  MMDAgent/Release/AppData/Julius/lang_m/web.60k.8-8.bingramv4.gz
+	  (added), MMDAgent/Library_Julius/src/msvc/portaudio/portaudio.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionDispatch/btConvex2dConvex2dAlgorithm.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/ngram/ngram_util.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btShapeHull.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/GpuSoftBodySolvers/DX11/btSoftBodySolverLinkData_DX11SIMDAware.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_unvoiced_vowel/Makefile.am
+	  (added), MMDAgent/Library_Julius/src/libjulius/Makefile.in
+	  (added), MMDAgent/Library_Julius/src/julius/recogloop.c (added),
+	  MMDAgent/Library_Open_JTalk/src/NEWS (added),
+	  MMDAgent/Library_Julius/src/julius/aclocal.m4 (added),
+	  MMDAgent_Example/Model/mei/vest.bmp (added),
+	  MMDAgent/Library_hts_engine_API/src/config/config.sub (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btEmptyShape.h
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/BroadphaseCollision/btAxisSweep3.h
+	  (added), MMDAgent/Library_Julius/src/msvc (added),
+	  MMDAgent/Library_zlib/lib/zlib.lib (added),
+	  MMDAgent/Library_Julius/src/mkss/mkss.c (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_freebsd.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletSoftBody/btSoftRigidDynamicsWorld.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab2njd/Makefile.in
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics/Character/btCharacterControllerInterface.h
+	  (added), MMDAgent/Library_Julius/src/julius/libjcode (added),
+	  MMDAgent/Library_Julius/src/configure.in (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletDynamics (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/PpuAddressSpace.h
+	  (added), MMDAgent_Example/Voice/mei_normal/tree-mgc.inf (added),
+	  MMDAgent/Library_Open_JTalk/src/bin/open_jtalk.c (added),
+	  MMDAgent/Release/AppData/Julius/jconf.txt (added),
+	  MMDAgent_Example/Expression/mei_sadness/mei_sadness.vmd (added),
+	  MMDAgent/Library_hts_engine_API/src/bin/Makefile.mak (added),
+	  MMDAgent/Library_Julius/src/man/ja/jcontrol.1 (added),
+	  MMDAgent/Library_Julius/src/libjulius/src/word_align.c (added),
+	  MMDAgent_Example/README.txt (added),
+	  MMDAgent/Library_Julius/src/julius/configure.in (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuLocalSupport.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/util (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_long_vowel/Makefile.am
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/adin/adin_mic_linux.c
+	  (added), MMDAgent/Library_Julius/src/libsent/src/util/aptree.c
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletMultiThreaded/SpuCollisionTaskProcess.h
+	  (added), MMDAgent/Library_Julius/src/man/ja/adintool.1 (added),
+	  MMDAgent/Release/AppData/toon0.bmp (added),
+	  MMDAgent/Library_Julius/src/msvc/config/version.c (added),
+	  MMDAgent/Library_Open_JTalk/src/COPYING (added),
+	  MMDAgent/Library_Julius/src/msvc/Debug/LICENSE_portaudio.txt
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btMultimaterialTriangleMeshShape.h
+	  (added), MMDAgent/Library_Julius/src/mkgshmm/Makefile.in (added),
+	  MMDAgent/Library_Julius/src/gramtools/configure (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/string_buffer.cpp
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/stream_wrapper.h
+	  (added), MMDAgent/Library_Open_JTalk/src/mecab/COPYING (added),
+	  MMDAgent/Library_Julius/src/adintool/Makefile.in (added),
+	  MMDAgent/Library_Julius/src (added),
+	  MMDAgent/Library_Open_JTalk/src/mecab/src/scoped_ptr.h (added),
+	  MMDAgent/Release/AppData/toon03.bmp (added),
+	  MMDAgent_Example/Model/mei/README.txt (added),
+	  MMDAgent/Library_Julius/src/00readme.txt (added),
+	  MMDAgent/MMDAgent/LogText.cpp (added),
+	  MMDAgent/Library_Bullet_Physics/include/MiniCL/cl_platform.h
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDModel_update.cpp
+	  (added), MMDAgent/Library_hts_engine_API/src/config/missing
+	  (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/Gimpact/btBoxCollision.h
+	  (added), MMDAgent/Library_Julius/src/libsent/src/util/endian.c
+	  (added), MMDAgent/Library_Julius/src/msvc/00README.txt (added),
+	  MMDAgent/Library_Julius/src/man/ja/gram2sapixml.pl.1 (added),
+	  MMDAgent/Library_Julius/src/julius/00readme.txt (added),
+	  MMDAgent_Example/Motion/menu_rotation/README.txt (added),
+	  MMDAgent/Library_MMDFiles/src/lib/PMDRigidBody.cpp (added),
+	  MMDAgent/MMDAgent/Plugin.h (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp (added),
+	  MMDAgent/Library_Bullet_Physics/include/BulletCollision/CollisionShapes/btTriangleMeshShape.h
+	  (added),
+	  MMDAgent/Library_Julius/src/libsent/src/hmminfo/rdhmmdef.c
+	  (added), MMDAgent/Library_Open_JTalk/src/configure (added),
+	  MMDAgent_Example/Voice/mei_happy/tree-lpf.inf (added),
+	  MMDAgent/Library_GLee/COPYRIGHT.txt (added),
+	  MMDAgent/Library_Julius/src/man/ja/mkbinhmmlist.1 (added),
+	  MMDAgent/Library_Bullet_Physics/include/LinearMath/btMinMax.h
+	  (added),
+	  MMDAgent/Library_Open_JTalk/src/njd_set_digit/Makefile.in
+	  (added), MMDAgent/Library_MMDFiles/src/lib/PMDModel_parse.cpp
+	  (added), MMDAgent/Library_Julius/src/msvc/zlib/zdll.exp (added),
+	  MMDAgent/Library_hts_engine_API/src/lib/HTS_engine.c (added),
+	  MMDAgent/Library_Julius/src/jcontrol/configure (added),
+	  MMDAgent/Library_MMDFiles/src/include/PTree.h (added),
+	  MMDAgent/Library_MMDFiles/src/lib/PMDTexture.cpp (added),
+	  MMDAgent/Release/AppData/Open_JTalk/char.bin (added),
+	  MMDAgent/Library_Julius/src/msvc/SampleApp/SampleApp.rc (added):
+	  Initialize MMDAgent and MMDAgent Example.
+

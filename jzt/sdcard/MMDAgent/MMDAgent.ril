@@ -1,0 +1,115 @@
+;-------------------------------------------------------------------------
+; インクルード
+;-------------------------------------------------------------------------
+; 基礎命令を使えるようにする
+[include "System\Script\foundation.ril"]
+; アンドロイドの命令を使えるようにする
+[include "System\Script\android.ril"]
+; ボタンインターフェース
+[include "System\Script\interface.ril"]
+
+;-------------------------------------------------------------------------
+; 初期化処理
+;-------------------------------------------------------------------------
+; プラグイン有効設定を変更する
+[plugin_enable "LookAt"]
+[plugin_disable "VIManager"]
+
+; ログ表示の有効化
+;[send_message type:"KEY" args:"F"]
+;[send_message type:"KEY" args:"d"]
+
+; サウンド再生
+;[sound_start alias:"music" file:"Music\miku.mp3"]
+
+; センサーを有効にする
+;[sensor_on type:SENSOR_TYPE_ACCELEROMETER delay:SENSOR_DELAY_NORMAL]
+;[sensor_on type:SENSOR_TYPE_GYROSCOPE delay:SENSOR_DELAY_NORMAL]
+
+; セーブデータ
+[let $share["actor_id"] = -1]
+
+;-------------------------------------------------------------------------
+; セーブデータの読み込み
+;-------------------------------------------------------------------------
+[const SAVEDATA = "save.dat"]
+[set $share][readvar file:SAVEDATA]
+
+;-------------------------------------------------------------------------
+; ライブ壁紙の場合は会話機能などを無効化する
+;-------------------------------------------------------------------------
+[macro name:"wallpaper_mode" params:"args"]
+  [plugin_disable "Open_JTalk"]
+  [plugin_disable "Julius"]
+  [let $global["share"]["WALLPAPER"] = true]
+[endmacro]
+[listen call:"wallpaper_mode" event:"WINDOW_EVENT_MODE" args:"WALLPAPER" limit:1]
+
+[macro name:"window_mode" params:"args"]
+  [plugin_enable "Open_JTalk"]
+  [plugin_enable "Julius"]
+  [let $global["share"]["WALLPAPER"] = false]
+[endmacro]
+[listen call:"window_mode" event:"WINDOW_EVENT_MODE" args:"WINDOW" limit:1]
+
+[wait 0.01]
+
+;-------------------------------------------------------------------------
+; 終了時の処理
+;-------------------------------------------------------------------------
+[macro name:"window_destory"]
+  [camera_getinfo $global["share"]["camera"]]
+  [writevar file:SAVEDATA var:$global["share"]]
+[endmacro]
+[listen call:"window_destory" event:"WINDOW_EVENT_DESTORY"]
+
+;-------------------------------------------------------------------------
+; 状態の復元
+;-------------------------------------------------------------------------
+; ベース位置の設定
+[let $basePos["x"] = 0]
+[let $basePos["y"] = 0]
+[let $basePos["z"] = 0]
+
+; ステージの読み込み
+[stage file:$share["stage"]]
+
+; モデルがロード出来なかったときに呼び出されるマクロ
+[macro name:"model_loaderror" params:"args"]
+  [let $basePos = $global["basePos"]]
+  [model_add alias:$args[0][0] file:"System\Model\dummy.pmd" x:$basePos["x"] y:$basePos["y"] z:$basePos["z"]]
+  [wait event:"MODEL_EVENT_ADD" args:$args[0][0]]
+[endmacro]
+[listen call:"model_loaderror" event:"MODEL_EVENT_LOADERROR"]
+
+; モーフが存在しなかった場合に呼び出されるマクロ
+[macro name:"morph_loaderror" params:"args"]
+  [send_message type:"MOTION_EVENT_DELETE" args:$args[0][0]."|".$args[1][0]]
+[endmacro]
+[listen call:"morph_loaderror" event:"MORPH_EVENT_NOTFOUND"]
+
+; キャラクターの読み込み
+[foreach from:$share["actors"] item:$actor key:$id]
+  [let $model_alias = "actor_".$id]
+  [model_add alias:$model_alias file:$actor["model"] x:$basePos["x"] y:$basePos["y"] z:$basePos["z"]]
+  [wait event:"MODEL_EVENT_ADD" args:$model_alias]
+
+  ; 呼吸モーションの読み込み
+  [motion_add model:$model_alias alias:"呼吸" file:"System\Motion\breath.vmd" smooth:ON repeat:LOOP frame:PART priority:10]
+
+  ; ポーズの読み込み
+  [motion_add model:$model_alias alias:"pose" file:$actor["pose"] smooth:ON repeat:LOOP frame:PART]
+  
+  ; モーフの読み込み
+  [foreach from:$actor["morphs"] item:$weight key:$name]
+    [morph model:$model_alias name:$name weight:$weight time:1]
+  [endforeach]
+[endforeach]
+
+; カメラセット
+[camera x:$share["camera"]["x"] y:$share["camera"]["y"] z:$share["camera"]["z"]
+        rx:$share["camera"]["rx"] ry:$share["camera"]["ry"] rz:$share["camera"]["rz"]
+        distance:$share["camera"]["distance"] fovy:32.0 time:0]
+
+; ポーズシーンを読み込む
+[script_add file:"System\Script\scenePose.ril"]
