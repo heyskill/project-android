@@ -1,0 +1,283 @@
+[include "System\Script\interface.ril"]
+
+; モーションの削除
+[foreach from:$share["actors"] item:$actor key:$id]
+  [let $model_alias = "actor_".$id]
+  [motion_delete model:$model_alias alias:"呼吸"]
+  [motion_delete model:$model_alias alias:"pose"]
+[endforeach]
+
+; 音楽の読み込み
+[sound_start alias:"DANCE_MUSIC" file:$share["dance"]["music"]]
+
+; モーションの読み込み
+[foreach from:$share["actors"] item:$actor key:$id]
+  [let $model_alias = "actor_".$id]
+  
+  [if "" == $actor["dance"]][continue][endif]
+  
+  [motion_add model:$model_alias alias:"ダンス" file:$actor["dance"] smooth:ON repeat:ONCE frame:FULL]
+  [wait event:"MOTION_EVENT_ADD" args:$model_alias."|ダンス"]
+[endforeach]
+
+; カメラの読み込み
+[camera $share["dance"]["camera"]]
+
+;-------------------------------------------------------------------------
+; 警告表示
+;-------------------------------------------------------------------------
+[macro name:"assert" params:"message"]
+  [textbox alias:"assert" layer:1000][ch $message][endtextbox]
+  [textbox_getsize alias:"assert" width:$width height:$height]
+  [textbox_move alias:"assert" x:(SCREEN_WIDTH-$width)/2 y:(SCREEN_HEIGHT-$height)/2 absolute:true]
+  [textbox_color alias:"assert" alpha:0]
+  [textbox_show alias:"assert"]
+  [while 1 > $alpha]
+    [textbox_color alias:"assert" alpha:$alpha]
+    [let $alpha += 0.01]
+    [wait 0.001]
+  [endwhile]
+  [wait 2]
+  [while 0 < $alpha]
+    [textbox_color alias:"assert" alpha:$alpha]
+    [let $alpha -= 0.01]
+    [wait 0.001]
+  [endwhile]
+  [textbox_hide alias:"assert"]
+[endmacro]
+
+;-------------------------------------------------------------------------
+; 操作対象
+;-------------------------------------------------------------------------
+[let $posx = SCREEN_WIDTH - 120]
+[let $posy = 20]
+
+[macro name:"forcus_change" params:"id, camera = true"]
+  [let &$share = $global["share"]]
+  
+  [let $share["actor_id"] = $id]
+  
+  [if 0 > $id][return][endif]
+  
+  ; モーフ設定
+  [send_message type:"MODEL_CHANGE"]
+  
+  ; カメラ位置調整
+  [let $model_alias = "actor_".$id]
+  [bone_getposition model:$model_alias name:"頭" dest:$bone]
+  [camera_getinfo $share["camera"]]
+  [let $share["camera"]["x"] = $bone["x"]]
+  [let $share["camera"]["y"] = $bone["y"] - 0.5]
+  [let $share["camera"]["z"] = $bone["z"]]
+  [if $camera]
+    [camera x:$share["camera"]["x"] y:$share["camera"]["y"] z:$share["camera"]["z"]
+            rx:$share["camera"]["rx"] ry:$share["camera"]["ry"] rz:$share["camera"]["rz"]
+            distance:$share["camera"]["distance"] fovy:32.0 time:3]
+  [endif]
+[endmacro]
+
+[macro name:"menu_actor_press" params:"args"]
+  [send_message type:"MORPH_HIDE"]
+  [button_disable]
+  [script_add file:"System\Script\actorSelection.ril"]
+  [button_neutral $args]
+[endmacro]
+
+[macro name:"menu_actor_release" params:"args"]
+  [let $id = $args[0][0]]
+  [forcus_change $id]
+  
+  [button_enable]
+  [send_message type:"MORPH_SHOW"]
+[endmacro]
+[listen call:"menu_actor_release" event:"ACTOR_SELECTED"]
+
+[let $alias = "actor_change"]
+[button_small alias:$alias text:"操作対象" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_actor_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; モーフ設定
+;-------------------------------------------------------------------------
+[macro name:"menu_morph_press" params:"args"]
+  [script_add file:"System\Script\morphSelection.ril"]
+  [button_switcher $args]
+[endmacro]
+
+[macro name:"menu_morph_release" params:"args"]
+  [send_message type:"MORPH_CLOSE"]
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "morph_window"]
+[button_small alias:$alias text:"モーフ設定" x:$posx y:$posy layer:1000]
+[button_listen call:"menu_morph_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"menu_morph_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+;-------------------------------------------------------------------------
+; 戻る
+;-------------------------------------------------------------------------
+[let $posx = 10]
+[let $posy = SCREEN_HEIGHT - 45]
+
+[macro name:"scene_dance"]
+  [send_message type:"MORPH_CLOSE"]
+
+  [button_delete]
+  [button_waitdelete]
+  [script_add file:"System\Script\sceneDance.ril"]
+  [kill]
+[endmacro]
+
+[macro name:"stop_press" params:"args"]
+  ; サウンド停止
+  [sound_stop "DANCE_MUSIC"]
+  
+  [foreach from:$global["share"]["actors"] item:$actor key:$id]
+    [let $model_alias = "actor_".$id]
+    ; モーション削除
+    [motion_delete model:$model_alias alias:"ダンス"]
+    [wait event:"MOTION_EVENT_DELETE" args:$model_alias."|ダンス"]
+    
+    ; モーションの復元
+    [motion_add model:$model_alias alias:"呼吸" file:"System\Motion\breath.vmd" smooth:ON repeat:LOOP frame:PART priority:10]
+    [wait event:"MOTION_EVENT_ADD" args:$model_alias."|呼吸"]
+    [if "" != $actor["pose"]]
+      [motion_add model:$model_alias alias:"pose" file:$actor["pose"] smooth:ON repeat:LOOP frame:PART]
+      [wait event:"MOTION_EVENT_ADD" args:$model_alias."|pose"]
+    [endif]
+  [endforeach]
+  
+  [thread][scene_dance][endthread]
+[endmacro]
+
+[let $alias = "back___"]
+[button_small alias:$alias text:"戻る" x:$posx y:$posy layer:1000]
+[button_listen call:"stop_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+[let $posx += 100]
+
+;-------------------------------------------------------------------------
+; 一時停止
+;-------------------------------------------------------------------------
+[let $pause = false]
+[macro name:"pause_press" params:"args"]
+  [foreach from:$global["share"]["actors"] item:$actor key:$id]
+    [let $model_alias = "actor_".$id]
+    [motion_pause model:$model_alias alias:"ダンス"]
+  [endforeach]
+  [sound_pause "DANCE_MUSIC"]
+  
+  [let $global["pause"] = true]
+  
+  [button_switcher $args]
+[endmacro]
+
+[macro name:"pause_release" params:"args"]
+  [foreach from:$global["share"]["actors"] item:$actor key:$id]
+    [let $model_alias = "actor_".$id]
+    [motion_resume model:$model_alias alias:"ダンス"]
+  [endforeach]
+  [sound_resume "DANCE_MUSIC"]
+  
+  [let $global["pause"] = false]
+    
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "pause"]
+[button_small alias:$alias text:"一時停止" x:SCREEN_WIDTH - 110 y:$posy layer:1000]
+[button_listen call:"pause_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"pause_release" event:BUTTON_EVENT_RELEASE alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+[let $posx += 100]
+
+;-------------------------------------------------------------------------
+; ポーズ保存
+;-------------------------------------------------------------------------
+[let $posx = 20]
+[let $posy = 20]
+
+[macro name:"savepose_press" params:"args"]
+  [let $id = $global["share"]["actor_id"]]
+  [motion_getcurrentframe dest:$frame model:"actor_".$id alias:"ダンス"]
+  
+  [set $file_names][strtok src:$global["share"]["actors"][$id]["dance"] delimiter:"/"]
+  [set $file_count][count $file_names]
+  [set $name][substr src:$file_names[$file_count - 1] offset:0 length:-4]
+  [let $file = "Pose/".$name."_".$frame.".vpd"]
+  
+  [pose_save model:"actor_0" file:$file]
+  
+  [assert "[".$file."]"]
+  
+  [button_neutral $args]
+[endmacro]
+
+[let $alias = "pose_save"]
+[button_small alias:$alias text:"[ポーズ保存]" x:$posx y:$posy layer:1000]
+[button_listen call:"savepose_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+[let $posy += 30]
+
+;-------------------------------------------------------------------------
+; 画像保存
+;-------------------------------------------------------------------------
+[macro name:"savephoto_press" params:"args"]
+  [foreach from:$global["share"]["actors"] item:$actor key:$id]
+    [let $model_alias = "actor_".$id]
+    [motion_pause model:$model_alias alias:"ダンス"]
+  [endforeach]
+  [sound_pause "DANCE_MUSIC"]
+  
+  [send_message type:"MORPH_HIDE"]
+  [button_hide]
+  [image_capture alias:"capture" layer:1000]
+  [script_add file:"System\Script\sceneSavePhoto.ril"]
+  [button_neutral $args]
+[endmacro]
+
+[macro name:"savephoto_close" params:"args"]
+  [if !$global["pause"]]
+    [foreach from:$global["share"]["actors"] item:$actor key:$id]
+      [let $model_alias = "actor_".$id]
+      [motion_resume model:$model_alias alias:"ダンス"]
+    [endforeach]
+    [sound_resume "DANCE_MUSIC"]
+  [endif]
+  
+  [button_show]
+  [button_enable]
+  [send_message type:"MORPH_SHOW"]
+[endmacro]
+[listen call:"savephoto_close" event:"SAVEPHOTO_CLOSE"]
+
+[let $alias = "image_save"]
+[button_small alias:$alias text:"[画像作成]" x:$posx y:$posy layer:1000]
+[button_listen call:"savephoto_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+[let $posx += 100]
+
+;-------------------------------------------------------------------------
+; モーション終了時の処理
+;-------------------------------------------------------------------------
+[macro name:"dance_end" params:"args"]
+  [stop_press $args]
+[endmacro]
+
+[foreach from:$share["actors"] item:$actor key:$id]
+  [listen call:"dance_end" event:"MOTION_EVENT_DELETE" args:"actor_".$id."|ダンス"]
+[endforeach]

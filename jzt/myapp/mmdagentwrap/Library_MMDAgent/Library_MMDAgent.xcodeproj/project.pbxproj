@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		986C7AE41A525F8500BF90B3 /* BoneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AD41A525F8500BF90B3 /* BoneController.cpp */; };
+		986C7AE51A525F8500BF90B3 /* LipSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AD51A525F8500BF90B3 /* LipSync.cpp */; };
+		986C7AE61A525F8500BF90B3 /* LogText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AD61A525F8500BF90B3 /* LogText.cpp */; };
+		986C7AE71A525F8500BF90B3 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AD71A525F8500BF90B3 /* Message.cpp */; };
+		986C7AE81A525F8500BF90B3 /* MMDAgent_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AD81A525F8500BF90B3 /* MMDAgent_utils.cpp */; };
+		986C7AE91A525F8500BF90B3 /* MMDAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AD91A525F8500BF90B3 /* MMDAgent.cpp */; };
+		986C7AEA1A525F8500BF90B3 /* MotionStocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7ADA1A525F8500BF90B3 /* MotionStocker.cpp */; };
+		986C7AEB1A525F8500BF90B3 /* Option.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7ADB1A525F8500BF90B3 /* Option.cpp */; };
+		986C7AEC1A525F8500BF90B3 /* Plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7ADC1A525F8500BF90B3 /* Plugin.cpp */; };
+		986C7AED1A525F8500BF90B3 /* PMDObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7ADD1A525F8500BF90B3 /* PMDObject.cpp */; };
+		986C7AEE1A525F8500BF90B3 /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7ADE1A525F8500BF90B3 /* Render.cpp */; };
+		986C7AEF1A525F8500BF90B3 /* ScreenWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7ADF1A525F8500BF90B3 /* ScreenWindow.cpp */; };
+		986C7AF01A525F8500BF90B3 /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AE01A525F8500BF90B3 /* Stage.cpp */; };
+		986C7AF11A525F8500BF90B3 /* TextRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AE11A525F8500BF90B3 /* TextRenderer.cpp */; };
+		986C7AF21A525F8500BF90B3 /* TileTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AE21A525F8500BF90B3 /* TileTexture.cpp */; };
+		986C7AF31A525F8500BF90B3 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 986C7AE31A525F8500BF90B3 /* Timer.cpp */; };
+		986C7B061A52604900BF90B3 /* AndroidLogUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AF51A52604900BF90B3 /* AndroidLogUtils.h */; };
+		986C7B071A52604900BF90B3 /* BoneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AF61A52604900BF90B3 /* BoneController.h */; };
+		986C7B081A52604900BF90B3 /* LipSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AF71A52604900BF90B3 /* LipSync.h */; };
+		986C7B091A52604900BF90B3 /* LogText.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AF81A52604900BF90B3 /* LogText.h */; };
+		986C7B0A1A52604900BF90B3 /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AF91A52604900BF90B3 /* Message.h */; };
+		986C7B0B1A52604900BF90B3 /* MMDAgent_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AFA1A52604900BF90B3 /* MMDAgent_utils.h */; };
+		986C7B0C1A52604900BF90B3 /* MMDAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AFB1A52604900BF90B3 /* MMDAgent.h */; };
+		986C7B0D1A52604900BF90B3 /* MotionStocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AFC1A52604900BF90B3 /* MotionStocker.h */; };
+		986C7B0E1A52604900BF90B3 /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AFD1A52604900BF90B3 /* Option.h */; };
+		986C7B0F1A52604900BF90B3 /* Plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AFE1A52604900BF90B3 /* Plugin.h */; };
+		986C7B101A52604900BF90B3 /* PMDObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7AFF1A52604900BF90B3 /* PMDObject.h */; };
+		986C7B111A52604900BF90B3 /* Render.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7B001A52604900BF90B3 /* Render.h */; };
+		986C7B121A52604900BF90B3 /* ScreenWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7B011A52604900BF90B3 /* ScreenWindow.h */; };
+		986C7B131A52604900BF90B3 /* Stage.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7B021A52604900BF90B3 /* Stage.h */; };
+		986C7B141A52604900BF90B3 /* TextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7B031A52604900BF90B3 /* TextRenderer.h */; };
+		986C7B151A52604900BF90B3 /* TileTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7B041A52604900BF90B3 /* TileTexture.h */; };
+		986C7B161A52604900BF90B3 /* Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 986C7B051A52604900BF90B3 /* Timer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98341DFD1A3FDEE9002627EB /* libLibrary_MMDAgent.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libLibrary_MMDAgent.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		986C7AD41A525F8500BF90B3 /* BoneController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoneController.cpp; sourceTree = "<group>"; };
+		986C7AD51A525F8500BF90B3 /* LipSync.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LipSync.cpp; sourceTree = "<group>"; };
+		986C7AD61A525F8500BF90B3 /* LogText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogText.cpp; sourceTree = "<group>"; };
+		986C7AD71A525F8500BF90B3 /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Message.cpp; sourceTree = "<group>"; };
+		986C7AD81A525F8500BF90B3 /* MMDAgent_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMDAgent_utils.cpp; sourceTree = "<group>"; };
+		986C7AD91A525F8500BF90B3 /* MMDAgent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMDAgent.cpp; sourceTree = "<group>"; };
+		986C7ADA1A525F8500BF90B3 /* MotionStocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MotionStocker.cpp; sourceTree = "<group>"; };
+		986C7ADB1A525F8500BF90B3 /* Option.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Option.cpp; sourceTree = "<group>"; };
+		986C7ADC1A525F8500BF90B3 /* Plugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plugin.cpp; sourceTree = "<group>"; };
+		986C7ADD1A525F8500BF90B3 /* PMDObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMDObject.cpp; sourceTree = "<group>"; };
+		986C7ADE1A525F8500BF90B3 /* Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Render.cpp; sourceTree = "<group>"; };
+		986C7ADF1A525F8500BF90B3 /* ScreenWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenWindow.cpp; sourceTree = "<group>"; };
+		986C7AE01A525F8500BF90B3 /* Stage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
+		986C7AE11A525F8500BF90B3 /* TextRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderer.cpp; sourceTree = "<group>"; };
+		986C7AE21A525F8500BF90B3 /* TileTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileTexture.cpp; sourceTree = "<group>"; };
+		986C7AE31A525F8500BF90B3 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		986C7AF51A52604900BF90B3 /* AndroidLogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidLogUtils.h; sourceTree = "<group>"; };
+		986C7AF61A52604900BF90B3 /* BoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoneController.h; sourceTree = "<group>"; };
+		986C7AF71A52604900BF90B3 /* LipSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LipSync.h; sourceTree = "<group>"; };
+		986C7AF81A52604900BF90B3 /* LogText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogText.h; sourceTree = "<group>"; };
+		986C7AF91A52604900BF90B3 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		986C7AFA1A52604900BF90B3 /* MMDAgent_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDAgent_utils.h; sourceTree = "<group>"; };
+		986C7AFB1A52604900BF90B3 /* MMDAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDAgent.h; sourceTree = "<group>"; };
+		986C7AFC1A52604900BF90B3 /* MotionStocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionStocker.h; sourceTree = "<group>"; };
+		986C7AFD1A52604900BF90B3 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		986C7AFE1A52604900BF90B3 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		986C7AFF1A52604900BF90B3 /* PMDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDObject.h; sourceTree = "<group>"; };
+		986C7B001A52604900BF90B3 /* Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Render.h; sourceTree = "<group>"; };
+		986C7B011A52604900BF90B3 /* ScreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenWindow.h; sourceTree = "<group>"; };
+		986C7B021A52604900BF90B3 /* Stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage.h; sourceTree = "<group>"; };
+		986C7B031A52604900BF90B3 /* TextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextRenderer.h; sourceTree = "<group>"; };
+		986C7B041A52604900BF90B3 /* TileTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileTexture.h; sourceTree = "<group>"; };
+		986C7B051A52604900BF90B3 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		986D0D291A3FFD6C00CBDFAE /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Android.mk; path = ../../jni/Library_MMDAgent/Android.mk; sourceTree = SOURCE_ROOT; };
+		98E071AD1A50F6B600E8EA97 /* Workflow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Workflow; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98341DFA1A3FDEE9002627EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98341DF41A3FDEE9002627EB = {
+			isa = PBXGroup;
+			children = (
+				98341DFF1A3FDEE9002627EB /* Library_MMDAgent */,
+				98341DFE1A3FDEE9002627EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98341DFE1A3FDEE9002627EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98341DFD1A3FDEE9002627EB /* libLibrary_MMDAgent.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98341DFF1A3FDEE9002627EB /* Library_MMDAgent */ = {
+			isa = PBXGroup;
+			children = (
+				986D0D291A3FFD6C00CBDFAE /* Android.mk */,
+				98E071AD1A50F6B600E8EA97 /* Workflow */,
+				986C7AF41A52602400BF90B3 /* include */,
+				986D0C7E1A3FE32E00CBDFAE /* lib */,
+			);
+			path = Library_MMDAgent;
+			sourceTree = SOURCE_ROOT;
+		};
+		986C7AF41A52602400BF90B3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				986C7AF51A52604900BF90B3 /* AndroidLogUtils.h */,
+				986C7AF61A52604900BF90B3 /* BoneController.h */,
+				986C7AF71A52604900BF90B3 /* LipSync.h */,
+				986C7AF81A52604900BF90B3 /* LogText.h */,
+				986C7AF91A52604900BF90B3 /* Message.h */,
+				986C7AFA1A52604900BF90B3 /* MMDAgent_utils.h */,
+				986C7AFB1A52604900BF90B3 /* MMDAgent.h */,
+				986C7AFC1A52604900BF90B3 /* MotionStocker.h */,
+				986C7AFD1A52604900BF90B3 /* Option.h */,
+				986C7AFE1A52604900BF90B3 /* Plugin.h */,
+				986C7AFF1A52604900BF90B3 /* PMDObject.h */,
+				986C7B001A52604900BF90B3 /* Render.h */,
+				986C7B011A52604900BF90B3 /* ScreenWindow.h */,
+				986C7B021A52604900BF90B3 /* Stage.h */,
+				986C7B031A52604900BF90B3 /* TextRenderer.h */,
+				986C7B041A52604900BF90B3 /* TileTexture.h */,
+				986C7B051A52604900BF90B3 /* Timer.h */,
+			);
+			name = include;
+			path = ../../jni/Library_MMDAgent/src/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		986D0C7E1A3FE32E00CBDFAE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				986C7AD41A525F8500BF90B3 /* BoneController.cpp */,
+				986C7AD51A525F8500BF90B3 /* LipSync.cpp */,
+				986C7AD61A525F8500BF90B3 /* LogText.cpp */,
+				986C7AD71A525F8500BF90B3 /* Message.cpp */,
+				986C7AD81A525F8500BF90B3 /* MMDAgent_utils.cpp */,
+				986C7AD91A525F8500BF90B3 /* MMDAgent.cpp */,
+				986C7ADA1A525F8500BF90B3 /* MotionStocker.cpp */,
+				986C7ADB1A525F8500BF90B3 /* Option.cpp */,
+				986C7ADC1A525F8500BF90B3 /* Plugin.cpp */,
+				986C7ADD1A525F8500BF90B3 /* PMDObject.cpp */,
+				986C7ADE1A525F8500BF90B3 /* Render.cpp */,
+				986C7ADF1A525F8500BF90B3 /* ScreenWindow.cpp */,
+				986C7AE01A525F8500BF90B3 /* Stage.cpp */,
+				986C7AE11A525F8500BF90B3 /* TextRenderer.cpp */,
+				986C7AE21A525F8500BF90B3 /* TileTexture.cpp */,
+				986C7AE31A525F8500BF90B3 /* Timer.cpp */,
+			);
+			name = lib;
+			path = ../../jni/Library_MMDAgent/src/lib;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		98341DFB1A3FDEE9002627EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986C7B081A52604900BF90B3 /* LipSync.h in Headers */,
+				986C7B0F1A52604900BF90B3 /* Plugin.h in Headers */,
+				986C7B151A52604900BF90B3 /* TileTexture.h in Headers */,
+				986C7B071A52604900BF90B3 /* BoneController.h in Headers */,
+				986C7B0A1A52604900BF90B3 /* Message.h in Headers */,
+				986C7B0C1A52604900BF90B3 /* MMDAgent.h in Headers */,
+				986C7B121A52604900BF90B3 /* ScreenWindow.h in Headers */,
+				986C7B0B1A52604900BF90B3 /* MMDAgent_utils.h in Headers */,
+				986C7B131A52604900BF90B3 /* Stage.h in Headers */,
+				986C7B111A52604900BF90B3 /* Render.h in Headers */,
+				986C7B091A52604900BF90B3 /* LogText.h in Headers */,
+				986C7B161A52604900BF90B3 /* Timer.h in Headers */,
+				986C7B101A52604900BF90B3 /* PMDObject.h in Headers */,
+				986C7B0D1A52604900BF90B3 /* MotionStocker.h in Headers */,
+				986C7B141A52604900BF90B3 /* TextRenderer.h in Headers */,
+				986C7B061A52604900BF90B3 /* AndroidLogUtils.h in Headers */,
+				986C7B0E1A52604900BF90B3 /* Option.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		98341DFC1A3FDEE9002627EB /* Library_MMDAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98341E081A3FDEE9002627EB /* Build configuration list for PBXNativeTarget "Library_MMDAgent" */;
+			buildPhases = (
+				986D0D251A3FE91B00CBDFAE /* Run Script */,
+				98341DF91A3FDEE9002627EB /* Sources */,
+				98341DFA1A3FDEE9002627EB /* Frameworks */,
+				98341DFB1A3FDEE9002627EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Library_MMDAgent;
+			productName = Library_MMDAgent;
+			productReference = 98341DFD1A3FDEE9002627EB /* libLibrary_MMDAgent.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98341DF51A3FDEE9002627EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = h4x;
+				TargetAttributes = {
+					98341DFC1A3FDEE9002627EB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 98341DF81A3FDEE9002627EB /* Build configuration list for PBXProject "Library_MMDAgent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98341DF41A3FDEE9002627EB;
+			productRefGroup = 98341DFE1A3FDEE9002627EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98341DFC1A3FDEE9002627EB /* Library_MMDAgent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		986D0D251A3FE91B00CBDFAE /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98341DF91A3FDEE9002627EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986C7AEA1A525F8500BF90B3 /* MotionStocker.cpp in Sources */,
+				986C7AEF1A525F8500BF90B3 /* ScreenWindow.cpp in Sources */,
+				986C7AE61A525F8500BF90B3 /* LogText.cpp in Sources */,
+				986C7AE71A525F8500BF90B3 /* Message.cpp in Sources */,
+				986C7AEC1A525F8500BF90B3 /* Plugin.cpp in Sources */,
+				986C7AE51A525F8500BF90B3 /* LipSync.cpp in Sources */,
+				986C7AF01A525F8500BF90B3 /* Stage.cpp in Sources */,
+				986C7AEB1A525F8500BF90B3 /* Option.cpp in Sources */,
+				986C7AE41A525F8500BF90B3 /* BoneController.cpp in Sources */,
+				986C7AE91A525F8500BF90B3 /* MMDAgent.cpp in Sources */,
+				986C7AED1A525F8500BF90B3 /* PMDObject.cpp in Sources */,
+				986C7AF31A525F8500BF90B3 /* Timer.cpp in Sources */,
+				986C7AF11A525F8500BF90B3 /* TextRenderer.cpp in Sources */,
+				986C7AF21A525F8500BF90B3 /* TileTexture.cpp in Sources */,
+				986C7AEE1A525F8500BF90B3 /* Render.cpp in Sources */,
+				986C7AE81A525F8500BF90B3 /* MMDAgent_utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		98341E061A3FDEE9002627EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"ANDROID=1",
+					"__ANDROID__=1",
+					"linux=1",
+					"__linux=1",
+					"__linux__=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/h4x/android-ndk/platforms/android-14/arch-arm/usr/include",
+					"/Users/h4x/android-ndk/sources/android/native_app_glue\n",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../jni/Library_MMDAgent/src/include ../../jni/Library_JPEG/include ../../jni/Library_Bullet_Physics/include ../../jni/Library_GLee/include ../../jni/Library_libpng/include ../../jni/Library_zlib/include ../../jni/Library_MMDFiles/include ../../jni/Library_MMDAgent/include ../../jni/Library_GLFW/include \"$(SRCROOT)/../../jni/Library_MMDAgent/src/include\"";
+			};
+			name = Debug;
+		};
+		98341E071A3FDEE9002627EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"ANDROID=1",
+					"__ANDROID__=1",
+					"linux=1",
+					"__linux=1",
+					"__linux__=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/h4x/android-ndk/platforms/android-14/arch-arm/usr/include",
+					"/Users/h4x/android-ndk/sources/android/native_app_glue\n",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../jni/Library_MMDAgent/src/include ../../jni/Library_JPEG/include ../../jni/Library_Bullet_Physics/include ../../jni/Library_GLee/include ../../jni/Library_libpng/include ../../jni/Library_zlib/include ../../jni/Library_MMDFiles/include ../../jni/Library_MMDAgent/include ../../jni/Library_GLFW/include \"$(SRCROOT)/../../jni/Library_MMDAgent/src/include\"";
+			};
+			name = Release;
+		};
+		98341E091A3FDEE9002627EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/h4x/android-ndk/platforms/android-14/arch-arm/usr/include",
+					"/Users/h4x/android-ndk/sources/android/native_app_glue",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98341E0A1A3FDEE9002627EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/h4x/android-ndk/platforms/android-14/arch-arm/usr/include",
+					"/Users/h4x/android-ndk/sources/android/native_app_glue",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98341DF81A3FDEE9002627EB /* Build configuration list for PBXProject "Library_MMDAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98341E061A3FDEE9002627EB /* Debug */,
+				98341E071A3FDEE9002627EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98341E081A3FDEE9002627EB /* Build configuration list for PBXNativeTarget "Library_MMDAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98341E091A3FDEE9002627EB /* Debug */,
+				98341E0A1A3FDEE9002627EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98341DF51A3FDEE9002627EB /* Project object */;
+}

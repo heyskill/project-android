@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang=en>
+        <meta charset=UTF-8 />
+        <title></title>
+    </head>
+
+    <body>
+        <p>Pose: %s</p>
+        <input type='button' value='Next Pose' id='btnNextPose' />
+        <input type='button' value='Start Listening' id='btnListen' />
+        <p>
+            <input id='txtVmd' value='' />
+            <input type='button' value='btnPlayEmotion' id='btnPlayEmotion' />
+            <input type='button' value='btnPlayMotion' id='btnPlayMotion'/>
+        </p>
+        <p>
+            <input id='txtLipDur' value="2000"/>
+            <input type='button' value='Play Lip' id='btnPlayLip'/>
+        </p>
+        <p>
+            <input id='txtTranslation' />
+            <input type='button' value='Setup Translation' id='btnSetupTranslation'/>
+        </p>
+
+        <script>
+            var btnNextPose = document.getElementById('btnNextPose'); 
+            var btnListen = document.getElementById('btnListen');
+
+            var txtVmd = document.getElementById('txtVmd');
+            var btnPlayEmotion = document.getElementById('btnPlayEmotion');
+            var btnPlayMotion = document.getElementById('btnPlayMotion');
+
+            var btnPlayLip = document.getElementById('btnPlayLip');
+            var txtLipDur = document.getElementById('txtLipDur');
+
+            var btnSetupTranslation = document.getElementById('btnSetupTranslation');
+            var txtTranslation = document.getElementById('txtTranslation');
+
+            function getTail() { return 't=' + (new Date()).getTime().toString(); }
+
+            function doAction(act, param)
+            {
+                if(!param || param == '')
+                    param = '';
+
+                window.location = 'index.html?action=' + act + '&' + param + '&' + getTail();
+            }
+
+            btnNextPose.onclick = function() 
+            {
+                doAction('nextPose', null);
+            };
+            btnListen.onclick = function() 
+            {
+                doAction('listen', null);
+            };
+            btnSetupTranslation.onclick = function()
+            {
+                var pos = txtTranslation.value;
+                var posComp = pos.split(',');
+                if(posComp.length != 3)
+                {
+                    alert('bad translation params');
+                    return;
+                }
+                doAction('translation', 'x=' + posComp[0] + '&y=' + posComp[1] + '&z=' + posComp[2]);
+            };
+
+            function playVmd(type, vmd)
+            {
+                var path = '/sdcard/MMDAgent_Example/' + ((type == 'emotion') ? 'Expression' : 'Motion') + '/' + vmd + '/' + vmd + '.vmd'
+                doAction('playVmd', 'path=' + encodeURIComponent(path));
+            }
+
+            btnPlayEmotion.onclick = function()
+            {
+                var vmd = txtVmd.value;
+                playVmd('emotion', vmd);
+            };
+            btnPlayMotion.onclick = function()
+            {
+                var vmd = txtVmd.value;
+                playVmd('motion', vmd);
+            };
+
+            btnPlayLip.onclick = function()
+            {
+                doAction('playLip', 'lipdur=' + txtLipDur.value);
+            };
+        </script>
+    </body>
+</html>

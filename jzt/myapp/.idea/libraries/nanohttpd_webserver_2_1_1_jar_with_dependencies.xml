@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nanohttpd-webserver-2.1.1-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/nanohttpd-webserver-2.1.1-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

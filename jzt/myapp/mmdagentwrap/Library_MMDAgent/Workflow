@@ -1,0 +1,134 @@
+---- notes ----
+
+1. OES and GLee macros
+
+sometimes we can find OpenGL functions both in GLee macro and -OES versions.
+however, the GLee macro version may broken, so we should choose the -OES version.
+
+
+---- workflow ----
+
+1. rotate the scene/camera
+
+render.resetCameraView(trans, angle, distance, fovy)   (called by render.setup)
+    render.m_distance/m_trans/m_angle/m_fovy <--
+    render.updateRotationFromAngle()
+
+render.updateModelViewMatrix()  (-> glMatrix m_rotMatrix)
+
+
+2. camera setup
+
+move the glViewport call
+
+    Render.updatePorjectionMatrix
+        delete glViewport() call
+        move to MMDAgent.renderScene
+
+switch to square viewport
+
+    Render.applyProjectionMatrix
+        x = y = 1/2 viewport height
+
+    Render.renderQuartered (old MMDAgent.renderScene)
+        construct viewport
+              [t]          [back]
+            [l] [r] --> [left] [right]
+              [b]          [front]
+
+to support multiple viewport rendering, move the glClear call
+
+    Render.renderScene
+        delete glClear
+        move to MMDAgent.renderScene
+
+viewport rotations
+
+    Render.render
+        call updateProjectionMatrix everytime
+
+    Render.applyProjectionMatrix
+        glRotatef(viewportRotAngle, 0, 0, 1)
+
+camera rotations
+
+    Render.renderScene
+        add glRotatef(m_cameraRotAngle, 0, 1, 0) before render the model
+
+
+3. FPS limit
+
+add fps limit
+
+    MMDAgent.commonMain - main loop
+        add fps limit constant & limitations
+
+    (however, MMDAgent.m_timer can also handle the FPS caculation)
+
+
+4. diagonal display
+
+Render.m_diagonalMethod defineds the method to render diagonal display
+    * 0 - no diagonal display
+    * 1 - directly diagoanl display
+    * 2 - post-effect diagonal display (depracated)
+
+
+5. diagonal display (post-effect mode)
+
+2015.5.13 h4x3rotab
+
+DEPRACATED: Render quality will drop grately due to post-effect's lack of
+            anti-alias. Instead, uses directly diagonal display
+
+
+note 1: the field-of-view has been set to a square area.
+note 2: the viewport is filled with field-of-view, so we can safely scale up
+
+a. create FBO; create buffers & texture; bind;
+
+    Render.setDiagonalRending(true)
+        allocate and deallocate resources
+        resources contains:
+            * argb color buffer
+            * 16bit depth buffer
+            * !! BUT NO stencil buffer
+
+b. modify drawing logic to support scaled framebuffer
+
+    Render.renderQuartered
+        calculate targetViewportSide, etc.
+
+c. before drawing, bind the FBO
+
+    Render.renderQuartered
+        bind FBO
+
+d. after drawing, render the frame with 45deg rotation (and possibly mirror)
+
+    Render.renderQuartered
+        unbind FBO
+        (reset projection matrix?)
+        reset viewport
+        draw texture directly to the screen
+
+
+5. directly diagonal display
+
+render order:
+     [left] [back]
+    [front] [right]
+
+
+
+
+
+-------
+
+speak
+
+    |--------------------[else]-----------------|
+    v                                           |
+[normal] --[wakeup]--> [listening]  ----> [judge result]  --[can anwser]--> [anwser]
+                            ^__________________________________________________|
+

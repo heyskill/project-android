@@ -1,0 +1,347 @@
+;
+; 標準命令セット
+;
+; rilが干渉していない命令を使用可能にする
+;
+
+; 定数宣言
+;--------------------
+[const GLOBAL = "GLOBAL"]
+[const LOCAL = "LOCAL"]
+
+[const ONCE = "ONCE"]
+[const LOOP = "LOOP"]
+
+[const PART = "PART"]
+[const FULL = "FULL"]
+
+[const ON = "ON"]
+[const OFF = "OFF"]
+
+[const FPS = 60]
+[const DELTA_TIME = 1.0 / FPS]
+
+; コントロールの有効化
+;--------------------
+[macro name:"controll_enable"]
+  [send_message type:"CONTROLL_ENABLE"]
+[endmacro]
+
+; コントロールの無効化
+;--------------------
+[macro name:"controll_disable"]
+  [send_message type:"CONTROLL_DISABLE"]
+[endmacro]
+
+; プラグインの有効化
+;--------------------
+[macro name:"plugin_enable" params:"name"]
+  [send_message type:"PLUGIN_ENABLE" args:$name]
+[endmacro]
+
+; プラグインの無効化
+;--------------------
+[macro name:"plugin_disable" params:"name"]
+  [send_message type:"PLUGIN_DISABLE" args:$name]
+[endmacro]
+
+; ライトカラー
+;--------------------
+[macro name:"lightcolor" params:"red, green, blue"]
+  [send_message type:"LIGHTCOLOR" args:"".$red.",".$green.",".$blue]
+[endmacro]
+
+; ライトの方向
+;--------------------
+[macro name:"lightdirection" params:"x, y, z"]
+  [send_message type:"LIGHTDIRECTION" args:"".$x.",".$y.",".$z]
+[endmacro]
+
+; カメラ制御
+;--------------------
+[macro name:"camera" params:"x, y, z, rx = 0, ry = 0, rz = 0, distance = 0, fovy = 16, time = 0"]
+  [send_message type:"CAMERA" args:"".$x.",".$y.",".$z."|".$rx.",".$ry.",".$rz."|".$distance."|".$fovy."|".$time]
+[endmacro]
+
+[macro name:"camera" params:"file"]
+  [send_message type:"CAMERA" args:$file]
+[endmacro]
+
+; ステージ
+;--------------------
+[macro name:"stage" params:"file"]
+  [send_message type:"STAGE" args:$file]
+[endmacro]
+
+; モデル追加
+;--------------------
+[macro name:"model_add" params:"alias, file, x = 0, y = 0, z = 0, rx = 0, ry = 0, rz = 0"]
+  [send_message type:"MODEL_ADD" args:$alias."|".$file."|".$x.",".$y.",".$z."|".$rx.",".$ry.",".$rz]
+[endmacro]
+
+[macro name:"model_add" params:"alias, file, x = 0, y = 0, z = 0, rx = 0, ry = 0, rz = 0, toon"]
+  [send_message type:"MODEL_ADD" args:$alias."|".$file."|".$x.",".$y.",".$z."|".$rx.",".$ry.",".$rz."|".$toon]
+[endmacro]
+
+[macro name:"model_add" params:"alias, file, x = 0, y = 0, z = 0, rx = 0, ry = 0, rz = 0, toon = ON, parent"]
+  [send_message type:"MODEL_ADD" args:$alias."|".$file."|".$x.",".$y.",".$z."|".$rx.",".$ry.",".$rz."|".$toon."|".$parent]
+[endmacro]
+
+[macro name:"model_add" params:"alias, file, x = 0, y = 0, z = 0, rx = 0, ry = 0, rz = 0, toon = ON, parent, bone"]
+  [send_message type:"MODEL_ADD" args:$alias."|".$file."|".$x.",".$y.",".$z."|".$rx.",".$ry.",".$rz."|".$toon."|".$parent."|".$bone]
+[endmacro]
+
+; モデル変更
+;--------------------
+[macro name:"model_change" params:"alias, file"]
+  [send_message type:"MODEL_CHANGE" args:$alias."|".$file]
+[endmacro]
+
+; モデル削除
+;--------------------
+[macro name:"model_delete" params:"alias"]
+  [send_message type:"MODEL_DELETE" args:$alias]
+[endmacro]
+
+; モーション追加
+;--------------------
+[macro name:"motion_add" params:"model, alias, file, frame = FULL, repeat = ONCE, smooth = ON, relocation = OFF, priority = 0, time = 0"]
+  [send_message type:"MOTION_ADD" args:$model."|".$alias."|".$file."|".$frame."|".$repeat."|".$smooth."|".$relocation."|".$priority."|".$time]
+[endmacro]
+
+; モーション変更
+;--------------------
+[macro name:"motion_change" params:"model, alias, file, time = 0"]
+  [send_message type:"MOTION_CHANGE" args:$model."|".$alias."|".$file."|".$time]
+[endmacro]
+
+; モーション削除
+;--------------------
+[macro name:"motion_delete" params:"model, alias"]
+  [send_message type:"MOTION_DELETE" args:$model."|".$alias]
+[endmacro]
+
+; モーション加速
+;--------------------
+[macro name:"motion_accelerate" params:"model, motion, speed, duration, start"]
+  [send_message type:"MOTION_ACCELERATE" args:$model."|".$motion."|".$speed."|".$duration."|".$start]
+[endmacro]
+
+; モーション一時停止
+;--------------------
+[macro name:"motion_pause" params:"model, alias"]
+  [send_message type:"MOTION_PAUSE" args:$model."|".$alias]
+[endmacro]
+
+; モーション再開
+;--------------------
+[macro name:"motion_resume" params:"model, alias"]
+  [send_message type:"MOTION_RESUME" args:$model."|".$alias]
+[endmacro]
+
+; モーション再生位置
+;--------------------
+[macro name:"motion_seek" params:"model, alias, to"]
+  [send_message type:"MOTION_RESUME" args:$model."|".$alias."|".$to]
+[endmacro]
+
+; 移動開始
+;--------------------
+[macro name:"move_start" params:"alias, x = 0, y = 0, z = 0, base = LOCAL, speed"]
+  [send_message type:"MOVE_START" args:$alias."|".$x.",".$y.",".$z."|".$base."|".$speed]
+[endmacro]
+
+; 移動停止
+;--------------------
+[macro name:"move_stop" params:"alias"]
+  [send_message type:"MOVE_STOP" args:$alias]
+[endmacro]
+
+; ターン開始
+;--------------------
+[macro name:"turn_start" params:"alias, x = 0, y = 0, z = 0, base = LOCAL, speed"]
+  [send_message type:"TURN_START" args:$alias."|".$x.",".$y.",".$z."|".$base."|".$speed]
+[endmacro]
+
+; ターン停止
+;--------------------
+[macro name:"turn_stop" params:"alias"]
+  [send_message type:"TURN_STOP" args:$alias]
+[endmacro]
+
+; 回転開始
+;--------------------
+[macro name:"rotate_start" params:"alias, x = 0, y = 0, z = 0, base = LOCAL, speed"]
+  [send_message type:"ROTATE_START" args:$alias."|".$x.",".$y.",".$z."|".$base."|".$speed]
+[endmacro]
+
+; 回転停止
+;--------------------
+[macro name:"rotate_stop" params:"alias"]
+  [send_message type:"ROTATE_STOP" args:$alias]
+[endmacro]
+
+; 発生停止
+;--------------------
+[macro name:"synth_stop" params:"model"]
+  [send_message type:"SYNTH_STOP" args:$model]
+[endmacro]
+
+; リップシンク開始
+;--------------------
+[macro name:"lipsync_start" params:"alias, src"]
+  [send_message type:"LIPSYNC_START" args:$alias."|".$src]
+[endmacro]
+
+; リップシンク停止
+;--------------------
+[macro name:"lipsync_stop" params:"alias"]
+  [send_message type:"LIPSYNC_STOP" args:$alias]
+[endmacro]
+
+; タイマー開始
+;--------------------
+[macro name:"timer_start" params:"alias, value"]
+  [send_message type:"TIMER_START" args:$alias."|".$value]
+[endmacro]
+
+; タイマー停止
+;--------------------
+[macro name:"timer_stop" params:"alias"]
+  [send_message type:"TIMER_STOP" args:$alias]
+[endmacro]
+
+; サウンド再生
+;--------------------
+[macro name:"sound_start" params:"alias, file"]
+  [send_message type:"SOUND_START" args:$alias."|".$file]
+[endmacro]
+
+; サウンド停止
+;--------------------
+[macro name:"sound_stop" params:"alias"]
+  [send_message type:"SOUND_STOP" args:$alias]
+[endmacro]
+
+; サウンド一時停止
+;--------------------
+[macro name:"sound_pause" params:"alias"]
+  [send_message type:"SOUND_PAUSE" args:$alias]
+[endmacro]
+
+; サウンド再開
+;--------------------
+[macro name:"sound_resume" params:"alias"]
+  [send_message type:"SOUND_RESUME" args:$alias]
+[endmacro]
+
+; サウンド再生位置
+;--------------------
+[macro name:"sound_seek" params:"alias, to"]
+  [send_message type:"SOUND_SEEK" args:$alias."|".$to]
+[endmacro]
+
+; 実行
+;--------------------
+[macro name:"execute" params:"file"]
+  [send_message type:"EXECUTE" args:$file]
+[endmacro]
+
+; キーポスト
+;--------------------
+[macro name:"KEY_POST" params:"class, key, shift = ON, ctrl = ON, alt = ON"]
+  [send_message type:"KEY_POST" args:$class."|".$key."|".$shift."|".$ctrl."|".$alt]
+[endmacro]
+
+; 重力設定
+;--------------------
+[macro name:"gravity" params:"x, y, z"]
+  [send_message type:"GRAVITY" args:"".$x.",".$y.",".$z]
+[endmacro]
+
+; モーフ設定
+;--------------------
+[macro name:"morph" params:"model, name, weight, time = 0"]
+  [send_message type:"MORPH" args:"".$model."|".$name."|".$weight."|".$time]
+[endmacro]
+
+; ポーズの保存
+;--------------------
+[macro name:"pose_save" params:"model, file"]
+  [send_message type:"POSE_SAVE" args:"".$model."|".$file]
+[endmacro]
+
+; ファイル選択
+;--------------------
+[macro name:"file_select" params:"alias, dir = \"\", ext = \"\""]
+  [send_message type:"FILE_SELECT" args:"".$alias."|".$dir."|".$ext]
+[endmacro]
+
+
+; 変数のダンプ
+;--------------------
+[macro name:"var_dump" params:"from"]
+  [set $count][count $from]
+  [if 0 == $count][ch $from][return][endif]
+
+  {[r]
+  [foreach from:$from item:$item key:$key]
+    "[ch $key]" => [var_dump $item][r]
+  [endforeach]
+  }
+[endmacro]
+
+; 指定フォルダ内のスクリプトを読み込む
+;--------------------
+[macro name:"loadscripts" params:"path = \"\""]
+  [set $files][dir path:$path ext:"ril"]
+  [foreach from:$files item:$item]
+    [script_add file:$path."\\".$item]
+  [endforeach]
+[endmacro]
+
+; マウスカーソルのヒット判定
+;--------------------
+[macro name:"is_mousehit" params:"x, y, width, height"]
+  [mouse_position x:$mx y:$my]
+  [return $mx > $x && $my > $y && $mx < $x + $width && $my < $y + $height]
+[endmacro]
+
+; フォルダ下層のファイル一覧を返す
+;--------------------
+[macro name:"find_all" params:"path =\"\", ext=\"*\""]
+  [set $folders][dir path:$path ext:$ext]
+  [foreach from:$folders item:$filePath]
+    [let $filePath = $path."/".$filePath]
+    [let $fileList[] = $filePath]
+  [endforeach]
+
+  [set $folders][dir path:$path]
+  [foreach from:$folders item:$filePath]
+    [let $filePath = $path."/".$filePath]
+    [set $isdir][isdir path:$filePath]
+    [if $isdir]
+      [set $anderFileList]
+      [find_all path:$filePath ext:$ext]
+      [set $count][count $anderFileList]
+      [if 0 < $count][let $fileList += $anderFileList][endif]
+    [endif]
+  [endforeach]
+  
+  [return $fileList]
+[endmacro]
+
+; 数値の桁数を指定して文字列として返す
+;--------------------
+[macro name:"int2str" params:"src, number"]
+  [set $len][strlen $src]
+  [let $number -= $len]
+
+  [let $dest = "".$src]
+  [while 0 < $number]
+    [let $dest = "0".$dest]
+    [let $number--]
+  [endwhile]
+  
+  [return $dest]
+[endmacro]

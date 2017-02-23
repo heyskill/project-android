@@ -1,0 +1,65 @@
+[include "system\script\interface.ril"]
+[include "system\script\android.ril"]
+
+[macro name:"release"]
+  [image_delete alias:"capture"]
+  [button_delete][button_waitdelete]
+  [wait 0.01]
+  [send_message type:"SAVEPHOTO_CLOSE"]
+  [kill]
+[endmacro]
+
+[image_show alias:"capture"]
+
+;-------------------------------------------------------------------------
+; “]‘—
+;-------------------------------------------------------------------------
+[macro name:"send_press" params:"args"]
+  [image_save alias:"capture" file:"Photo/temp.png"]
+  [currentdir $dir]
+  [intent_sendfile type:"image/png" file:$dir."/Photo/temp.png"]
+  [button_neutral $args]
+[endmacro]
+
+[let $posx = 20]
+[let $posy = SCREEN_HEIGHT - 50]
+[let $alias = "send"]
+[button_small alias:$alias text:"“]‘—" x:$posx y:$posy layer:1000]
+[button_listen call:"send_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+;-------------------------------------------------------------------------
+; •Û‘¶
+;-------------------------------------------------------------------------
+[macro name:"save_press" params:"args"]
+  [time $time]
+  [set $year][int2str src:$time["year"] number:4]
+  [set $month][int2str src:$time["month"] number:2]
+  [set $day][int2str src:$time["day"] number:2]
+  [set $hour][int2str src:$time["hour"] number:2]
+  [set $min][int2str src:$time["min"] number:2]
+  [image_save alias:"capture" file:"Photo/".$year.$month.$day.$hour.$min.".png"]
+  [thread][release][endthread]
+[endmacro]
+
+[let $posx += 110]
+[let $alias = "save"]
+[button_small alias:$alias text:"•Û‘¶" x:$posx y:$posy layer:1000]
+[button_listen call:"save_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
+
+;-------------------------------------------------------------------------
+; –ß‚é
+;-------------------------------------------------------------------------
+[macro name:"close_press" params:"args"]
+  [thread][release][endthread]
+[endmacro]
+
+[let $posx += 110]
+[let $alias = "back"]
+[button_small alias:$alias text:"–ß‚é" x:$posx y:$posy layer:1000]
+[button_listen call:"close_press" event:BUTTON_EVENT_PRESS alias:$alias]
+[button_listen call:"button_fadein" event:BUTTON_EVENT_FADEIN alias:$alias]
+[button_listen call:"button_neutral" event:BUTTON_EVENT_NEUTRAL alias:$alias]
